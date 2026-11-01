@@ -13,7 +13,7 @@ export const shared = {
   email: "hello@ahmedshoman.dev", // TODO: put your real email
   github: "Ahmed-Shoman",
   // TODO: your WhatsApp number in international format, digits only (e.g. 2010xxxxxxxx)
-  whatsapp: "",
+  whatsapp: "201203958757",
   year: 2026,
   photo: "/img/hero-cutout.png",
 };
