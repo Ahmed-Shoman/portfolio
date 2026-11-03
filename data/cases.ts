@@ -195,6 +195,7 @@ export const cases: CaseStudy[] = [
     ],
     gallery: [
       s("glamour", "/img/work/glamour.jpg", "Home page", true),
+      s("glamour", "categories", "Shop by category & new arrivals"),
       s("glamour", "category", "Category page with filters"),
       s("glamour", "product", "Product page"),
       s("glamour", "help-centre", "Help centre"),
