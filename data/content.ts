@@ -154,11 +154,11 @@ const en = {
     { idx: "№03 — 2025", name: "PYRAMIDS HR", desc: "HR system: employees, attendance, salaries, field visits and travel allowances. Laravel API + SPA.", role: "front · back · deploy" },
     { idx: "№04 — 2025", name: "CLEAN OPS", desc: "Management system for cleaning companies: finance, attendance and time tracking, ZATCA integration.", role: "back · integrations" },
   ],
-  workHead: { title: "All projects", note: "live sites · click to visit" },
+  workHead: { title: "All projects", note: "live sites · open any for the full story" },
   workUi: {
     all: "All",
     cats: { Systems: "Systems", "E-commerce": "E-commerce", Websites: "Websites" } as Record<WorkCat, string>,
-    visit: "Visit ↗",
+    visit: "Case study →",
     shotAlt: "website screenshot",
     filterAria: "Filter projects",
   },

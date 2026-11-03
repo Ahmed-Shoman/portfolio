@@ -3,7 +3,7 @@ import Header from "./Header";
 import Effects from "./Effects";
 import ProjectsRail from "./ProjectsRail";
 import WorkGrid from "./WorkGrid";
-import ContactForm from "./ContactForm";
+import SiteFooter from "./SiteFooter";
 import WhatsAppFab from "./WhatsAppFab";
 import Arrow from "./Arrow";
 import HtmlLang from "./HtmlLang";
@@ -178,24 +178,7 @@ export default function Home({ c }: { c: SiteContent }) {
       </main>
 
       {/* ═══ FOOTER + CONTACT ═══ */}
-      <footer className="footer" id="contact">
-        <p className="footer__note">{c.footer.note}</p>
-        <a className="footer__cta" href={s.whatsapp ? `https://wa.me/${s.whatsapp}` : `mailto:${s.email}`}>
-          {c.footer.cta} <Arrow />
-        </a>
-        <ContactForm t={c.contact} whatsapp={s.whatsapp} email={s.email} />
-        <div className="footer__meta">
-          <span>{s.email}</span>
-          {s.whatsapp && <span dir="ltr">WhatsApp: +{s.whatsapp}</span>}
-          <a href={`https://github.com/${s.github}`} target="_blank" rel="noreferrer">
-            GitHub: @{s.github}
-          </a>
-          <span>{c.location}</span>
-          <span>
-            © {s.year} {s.logo}®
-          </span>
-        </div>
-      </footer>
+      <SiteFooter c={c} />
 
       <WhatsAppFab number={s.whatsapp} label={c.fab} />
       <Effects />

@@ -35,7 +35,7 @@ export default function WorkGrid({ work, cats, ui }: { work: Item[]; cats: WorkC
         {items.map((w) => {
           const host = w.url.replace(/^https?:\/\//, "");
           return (
-            <a className="shot" key={w.key} data-cat={w.cat} href={w.url} target="_blank" rel="noreferrer">
+            <a className="shot" key={w.key} data-cat={w.cat} href={`/work/${w.key}`}>
               <figure className="shot__frame">
                 <div className="shot__bar" dir="ltr">
                   <i />
