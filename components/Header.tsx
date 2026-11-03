@@ -7,10 +7,9 @@ type Props = {
   logo: string;
   nav: { href: string; label: string }[];
   sayHello: string;
-  switchLang: { href: string; label: string; aria: string };
 };
 
-export default function Header({ logo, nav, sayHello, switchLang }: Props) {
+export default function Header({ logo, nav, sayHello }: Props) {
   const [solid, setSolid] = useState(false);
   const [active, setActive] = useState<string | null>(null);
 
@@ -50,9 +49,6 @@ export default function Header({ logo, nav, sayHello, switchLang }: Props) {
         ))}
       </nav>
       <div className="header__actions">
-        <a className="lang-switch" href={switchLang.href} aria-label={switchLang.aria} hrefLang={switchLang.href === "/ar" ? "ar" : "en"}>
-          {switchLang.label}
-        </a>
         <a className="pill pill--lime" href="#contact">
           {sayHello} <Arrow />
         </a>

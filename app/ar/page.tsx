@@ -1,15 +1,7 @@
-import type { Metadata } from "next";
-import Home from "@/components/Home";
-import { getContent } from "@/data/content";
+import { redirect } from "next/navigation";
 
-const c = getContent("ar");
-
-export const metadata: Metadata = {
-  title: c.title,
-  description: c.description,
-  alternates: { languages: { en: "/", ar: "/ar" } },
-};
-
+// The Arabic version is turned off; old /ar links go to the English site.
+// To bring it back, render <Home c={getContent("ar")} /> here (the Arabic text is still in data/content.ts).
 export default function Page() {
-  return <Home c={c} />;
+  redirect("/");
 }

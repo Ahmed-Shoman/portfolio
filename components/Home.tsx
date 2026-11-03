@@ -28,7 +28,7 @@ export default function Home({ c }: { c: SiteContent }) {
         </div>
       </div>
 
-      <Header logo={s.logo} nav={c.nav} sayHello={c.sayHello} switchLang={c.switchLang} />
+      <Header logo={s.logo} nav={c.nav} sayHello={c.sayHello} />
 
       <main id="top">
         {/* ═══ HERO ═══ */}

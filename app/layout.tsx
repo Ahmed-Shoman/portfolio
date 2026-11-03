@@ -7,7 +7,6 @@ const c = getContent("en");
 export const metadata: Metadata = {
   title: c.title,
   description: c.description,
-  alternates: { languages: { ar: "/ar", en: "/" } },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
