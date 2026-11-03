@@ -88,3 +88,5 @@
 .site{font-family:var(--mono)}
 .site{overflow-x:clip}
 .cform input,.cform select{height:50px}
+.site[dir=rtl] .hero__line{font-size:clamp(56px,11vw,190px)}
+@media (max-width:900px){.site[dir=rtl] .hero__line{font-size:clamp(44px,14vw,110px)}}
