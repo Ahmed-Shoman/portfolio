@@ -101,7 +101,6 @@ const en = {
   ticker: ["Writing code", "Breaking code", "Fixing code", "Shipping features", "Frontend", "Backend", "E-commerce"],
   nav: [
     { href: "#stack", label: "Stack" },
-    { href: "#doposle", label: "Before·After" },
     { href: "#projects", label: "Work" },
     { href: "#work", label: "Projects" },
     { href: "#process", label: "Process" },
@@ -115,7 +114,7 @@ const en = {
     photoAlt: "Ahmed Shoman in a black suit and sunglasses",
     caption: "// the dev you can trust with prod",
     ctaMain: "Discuss a project",
-    ctaSecond: "Before/after stats",
+    ctaSecond: "See my projects",
   },
   manifest: {
     note: "// manifesto",
@@ -205,7 +204,6 @@ const ar: Content = {
   ticker: ["كتابة كود", "تجربة الكود", "إصلاح الكود", "تسليم مميزات", "فرونت إند", "باك إند", "متاجر إلكترونية"],
   nav: [
     { href: "#stack", label: "الأدوات" },
-    { href: "#doposle", label: "قبل·بعد" },
     { href: "#projects", label: "أعمالي" },
     { href: "#work", label: "المشاريع" },
     { href: "#process", label: "طريقة الشغل" },
@@ -219,7 +217,7 @@ const ar: Content = {
     photoAlt: "أحمد شومان ببدلة سوداء ونظارة شمس",
     caption: "// مطوّر تقدر تأمّنه على موقعك",
     ctaMain: "ابدأ مشروعك",
-    ctaSecond: "أرقام قبل وبعد",
+    ctaSecond: "شوف مشاريعي",
   },
   manifest: {
     note: "// مبدأي",

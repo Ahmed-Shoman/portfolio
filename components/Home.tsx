@@ -53,7 +53,7 @@ export default function Home({ c }: { c: SiteContent }) {
             <a className="pill pill--lime pill--big" href="#contact">
               {c.hero.ctaMain} <Arrow />
             </a>
-            <a className="pill pill--ghost pill--big" href="#doposle">
+            <a className="pill pill--ghost pill--big" href="#work">
               {c.hero.ctaSecond}
             </a>
           </div>
@@ -95,45 +95,6 @@ export default function Home({ c }: { c: SiteContent }) {
               </div>
             </div>
           ))}
-        </section>
-
-        {/* ═══ BEFORE / AFTER ═══ */}
-        <section className="ba" id="doposle">
-          <div className="ba__word" aria-hidden="true">
-            <span className="ba__line ba__line--left">{c.beforeAfter.before}</span>
-            <div className="ba__circle">
-              <span>&amp;</span>
-            </div>
-            <span className="ba__line ba__line--right">{c.beforeAfter.after}</span>
-          </div>
-          <p className="ba__note">{c.beforeAfter.note}</p>
-          <div className="ba__photos">
-            {[
-              { ...c.beforeAfter.beforeImg, dir: "left" },
-              { ...c.beforeAfter.afterImg, dir: "right" },
-            ].map((ph) => (
-              <figure className="ba__photo reveal" data-reveal={ph.dir} key={ph.dir}>
-                <img src={ph.src} alt={ph.alt} />
-                <figcaption>{ph.caption}</figcaption>
-              </figure>
-            ))}
-          </div>
-          <div className="ba__stats">
-            {c.stats.map((st) => (
-              <div className="stat reveal" key={st.label}>
-                <span className="stat__label">{st.label}</span>
-                <span className="stat__before">{st.before}</span>
-                <span className="stat__arrow">{c.beforeAfter.arrow}</span>
-                <span className="stat__after" dir="ltr">
-                  {st.prefix && <i>{st.prefix}</i>}
-                  <b className="count" data-to={st.to} data-dec={st.dec}>
-                    0
-                  </b>
-                  {st.suffix && <i>{st.suffix}</i>}
-                </span>
-              </div>
-            ))}
-          </div>
         </section>
 
         {/* ═══ PROJECTS ═══ */}
