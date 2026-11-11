@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const d = find(slug);
   if (!d) return {};
   return {
-    title: `${d.item.name} — case study · SHOMAN®`,
+    title: `${d.item.name} — case study · AYMAN®`,
     description: d.study.headline,
     openGraph: { images: [d.item.img] },
   };
@@ -61,7 +61,7 @@ export default async function CasePage({ params }: { params: Promise<{ slug: str
   const s = c.shared;
   const host = item.url.replace(/^https?:\/\//, "");
   const wa = s.whatsapp
-    ? `https://wa.me/${s.whatsapp}?text=${encodeURIComponent(`Hi Ahmed, I saw ${item.name} in your portfolio and I'd like results like this for my store.`)}`
+    ? `https://wa.me/${s.whatsapp}?text=${encodeURIComponent(`Hi Ayman, I saw ${item.name} in your portfolio and I'd like results like this for my store.`)}`
     : "#contact";
 
   return (

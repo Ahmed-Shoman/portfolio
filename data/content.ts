@@ -10,13 +10,13 @@ export type WorkCat = "Snapchat" | "TikTok" | "Google" | "Store";
 
 // Shared (same in both languages)
 export const shared = {
-  logo: "SHOMAN",
+  logo: "AYMAN",
   email: "hello@ahmedshoman.dev", // TODO: put your real email
   github: "Ahmed-Shoman",
   // TODO: your WhatsApp number in international format, digits only (e.g. 2010xxxxxxxx)
   whatsapp: "201203958757",
   year: 2026,
-  photo: "/img/hero-cutout.png",
+  photo: "/img/hero-ayman.png",
 };
 
 // ─── Case studies grid: links and images are shared, text is per language ───
@@ -67,9 +67,9 @@ const projColors: ProjColor[] = ["lime", "mint", "gold", "olive"];
 const en = {
   lang: "en" as Lang,
   dir: "ltr" as "ltr" | "rtl",
-  title: "SHOMAN® — Ahmed Shoman, media buyer",
+  title: "AYMAN® — Ayman Abdullah, media buyer",
   description:
-    "Ahmed Shoman runs Snapchat, TikTok, Meta and Google Ads for e-commerce stores. SAR 690K+ in tracked sales at a 7.4× blended ROAS.",
+    "Ayman Abdullah runs Snapchat, TikTok, Meta and Google Ads for e-commerce stores. SAR 690K+ in tracked sales at a 7.4× blended ROAS.",
   switchLang: { href: "/ar", label: "ع", aria: "عربي" },
   location: "Mansoura, EG · remote worldwide",
   ticker: ["Testing creatives", "Killing losers", "Scaling winners", "Snapchat Ads", "TikTok Ads", "Meta Ads", "Google Ads", "ROAS over likes"],
@@ -81,11 +81,11 @@ const en = {
   ],
   sayHello: "Say hello",
   hero: {
-    meta: ["ahmed shoman — media buyer", "Mansoura, EG · EET", "SAR 690K+ tracked sales"],
-    first: "AHMED",
-    last: "SHOMAN",
+    meta: ["ayman abdullah — media buyer", "Mansoura, EG · EET", "SAR 690K+ tracked sales"],
+    first: "AYMAN",
+    last: "ABDULLAH",
     circle: "ADS",
-    photoAlt: "Ahmed Shoman in a black suit and sunglasses",
+    photoAlt: "Ayman Abdullah in a black blazer",
     caption: "// the media buyer you can trust with your budget",
     ctaMain: "Grow my sales",
     ctaSecond: "See the numbers",
@@ -156,7 +156,7 @@ const en = {
     msgPh: "What do you sell, and what are you spending on ads now?",
     send: "Send on WhatsApp",
     noNumber: "WhatsApp isn't set up yet. Email me instead:",
-    waIntro: "Hi Ahmed, I'd like to talk about running ads for my store.",
+    waIntro: "Hi Ayman, I'd like to talk about running ads for my store.",
     waName: "Name",
     waType: "Need",
     waBudget: "Ad budget",
@@ -171,8 +171,8 @@ type Content = typeof en;
 const ar: Content = {
   lang: "ar",
   dir: "rtl",
-  title: "شومان® — أحمد شومان، ميديا باير",
-  description: "أحمد شومان بيدير إعلانات سناب شات وتيك توك وميتا وجوجل للمتاجر الإلكترونية. أكتر من 690 ألف ريال مبيعات متتبّعة بعائد 7.4 ضعف الصرف.",
+  title: "أيمن® — أيمن عبدالله، ميديا باير",
+  description: "أيمن عبدالله بيدير إعلانات سناب شات وتيك توك وميتا وجوجل للمتاجر الإلكترونية. أكتر من 690 ألف ريال مبيعات متتبّعة بعائد 7.4 ضعف الصرف.",
   switchLang: { href: "/", label: "EN", aria: "English" },
   location: "المنصورة، مصر · عن بُعد لكل الدول",
   ticker: ["اختبار الكريتيف", "قفل الخسران", "توسيع الكسبان", "إعلانات سناب", "إعلانات تيك توك", "إعلانات ميتا", "إعلانات جوجل", "العائد قبل اللايكات"],
@@ -184,11 +184,11 @@ const ar: Content = {
   ],
   sayHello: "كلّمني",
   hero: {
-    meta: ["أحمد شومان — ميديا باير", "المنصورة، مصر", "+690 ألف ريال مبيعات متتبّعة"],
-    first: "أحمد",
-    last: "شومان",
+    meta: ["أيمن عبدالله — ميديا باير", "المنصورة، مصر", "+690 ألف ريال مبيعات متتبّعة"],
+    first: "أيمن",
+    last: "عبدالله",
     circle: "ADS",
-    photoAlt: "أحمد شومان ببدلة سوداء ونظارة شمس",
+    photoAlt: "أيمن عبدالله ببليزر أسود",
     caption: "// ميديا باير تقدر تأمّنه على ميزانيتك",
     ctaMain: "زوّد مبيعاتي",
     ctaSecond: "شوف الأرقام",
@@ -259,7 +259,7 @@ const ar: Content = {
     msgPh: "بتبيع إيه، وبتصرف كام على الإعلانات دلوقتي؟",
     send: "ابعت على واتساب",
     noNumber: "الواتساب لسه متضافش. ابعتلي على الإيميل:",
-    waIntro: "أهلًا أحمد، عاوز أتكلم معاك عن إعلانات متجري.",
+    waIntro: "أهلًا أيمن، عاوز أتكلم معاك عن إعلانات متجري.",
     waName: "الاسم",
     waType: "المطلوب",
     waBudget: "ميزانية الإعلانات",
