@@ -11,10 +11,10 @@ export type WorkCat = "Snapchat" | "TikTok" | "Google" | "Store";
 // Shared (same in both languages)
 export const shared = {
   logo: "AYMAN",
-  email: "hello@ahmedshoman.dev", // TODO: put your real email
-  github: "Ahmed-Shoman",
+  email: "", // add an email here to show it in the footer
+  github: "", // add a GitHub username here to show it in the footer
   // TODO: your WhatsApp number in international format, digits only (e.g. 2010xxxxxxxx)
-  whatsapp: "201203958757",
+  whatsapp: "201026830756",
   year: 2026,
   photo: "/img/hero-ayman.png",
 };
