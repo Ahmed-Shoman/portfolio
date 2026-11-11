@@ -61,7 +61,7 @@ export default async function CasePage({ params }: { params: Promise<{ slug: str
   const s = c.shared;
   const host = item.url.replace(/^https?:\/\//, "");
   const wa = s.whatsapp
-    ? `https://wa.me/${s.whatsapp}?text=${encodeURIComponent(`Hi Ahmed, I saw ${item.name} in your portfolio and I'd like something similar.`)}`
+    ? `https://wa.me/${s.whatsapp}?text=${encodeURIComponent(`Hi Ahmed, I saw ${item.name} in your portfolio and I'd like results like this for my store.`)}`
     : "#contact";
 
   return (
@@ -73,7 +73,7 @@ export default async function CasePage({ params }: { params: Promise<{ slug: str
           <sup>®</sup>
         </a>
         <a className="case-back" href="/#work">
-          <span aria-hidden="true">←</span> All projects
+          <span aria-hidden="true">←</span> All case studies
         </a>
         <a className="pill pill--lime" href="#contact">
           {c.sayHello} <Arrow />
@@ -95,29 +95,29 @@ export default async function CasePage({ params }: { params: Promise<{ slug: str
 
           <dl className="case-facts">
             <div>
-              <dt>Industry</dt>
+              <dt>Business</dt>
               <dd>{study.industry}</dd>
             </div>
             <div>
-              <dt>Location</dt>
+              <dt>Market</dt>
               <dd>{study.location}</dd>
             </div>
             <div>
-              <dt>Type</dt>
+              <dt>Platform</dt>
               <dd>{study.type}</dd>
             </div>
             <div>
-              <dt>Delivered</dt>
+              <dt>What I did</dt>
               <dd>{study.services.join(" · ")}</dd>
             </div>
           </dl>
 
           <div className="case-hero__cta">
-            <a className="pill pill--lime pill--big" href={item.url} target="_blank" rel="noreferrer">
-              Visit live site <Arrow />
+            <a className="pill pill--lime pill--big" href={wa} target={s.whatsapp ? "_blank" : undefined} rel="noreferrer">
+              I want results like this <Arrow />
             </a>
-            <a className="pill pill--ghost pill--big" href={wa} target={s.whatsapp ? "_blank" : undefined} rel="noreferrer">
-              I want one like this
+            <a className="pill pill--ghost pill--big" href="/#work">
+              See all case studies
             </a>
           </div>
 
@@ -128,7 +128,7 @@ export default async function CasePage({ params }: { params: Promise<{ slug: str
               <i />
               <span>{host}</span>
             </div>
-            <img src={study.gallery[0]?.src ?? item.img} alt={`${item.name} home page`} />
+            <img src={study.gallery[0]?.src ?? item.img} alt={`${item.name} — ads dashboard`} />
           </figure>
         </section>
 
@@ -154,8 +154,8 @@ export default async function CasePage({ params }: { params: Promise<{ slug: str
         <section className="stack case-features">
           <div className="section-head">
             <span className="section-head__idx">(01)</span>
-            <h2 className="section-head__title">What&apos;s inside</h2>
-            <span className="section-head__note">// key features</span>
+            <h2 className="section-head__title">The numbers</h2>
+            <span className="section-head__note">// key results</span>
           </div>
           {study.features.map((f, i) => (
             <div className="stack__row case-feature reveal" key={f.title}>
@@ -173,8 +173,8 @@ export default async function CasePage({ params }: { params: Promise<{ slug: str
         <section className="case-gallery">
           <div className="section-head">
             <span className="section-head__idx">(02)</span>
-            <h2 className="section-head__title">Screens</h2>
-            <span className="section-head__note">// click to enlarge</span>
+            <h2 className="section-head__title">Screenshots</h2>
+            <span className="section-head__note">// names hidden · click to enlarge</span>
           </div>
           <Gallery shots={study.gallery.slice(1)} host={host} name={item.name} />
         </section>
@@ -185,20 +185,20 @@ export default async function CasePage({ params }: { params: Promise<{ slug: str
           <p className="manifest__note">// the result</p>
           <p className="case-cta__outcome">{study.outcome}</p>
           <h2 className="case-cta__title">
-            Need a <mark className="mk mk--lime">{{ Systems: "system", "E-commerce": "store", Websites: "website" }[item.cat]}</mark> like this?
+            Want <mark className="mk mk--lime">results</mark> like this?
           </h2>
           <div className="case-hero__cta">
             <a className="pill pill--lime pill--big" href={wa} target={s.whatsapp ? "_blank" : undefined} rel="noreferrer">
               Talk on WhatsApp <Arrow />
             </a>
             <a className="pill pill--ghost pill--big case-cta__ghost" href="/#work">
-              See all projects
+              See all case studies
             </a>
           </div>
         </section>
 
         {/* ═══ PREV / NEXT ═══ */}
-        <nav className="case-nav" aria-label="More projects">
+        <nav className="case-nav" aria-label="More case studies">
           <a className="case-nav__item" href={`/work/${prev.key}`}>
             <span>← Previous</span>
             <strong>{prev.name}</strong>

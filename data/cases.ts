@@ -1,10 +1,10 @@
 // ─────────────────────────────────────────────────────────────
 //  Case-study pages: /work/<key>
-//  One entry per project in data/content.ts (same `key`).
+//  One entry per case in data/content.ts (same `key`).
 //  Screens live in public/img/cases/<key>/ — a screen whose file
-//  doesn't exist yet is skipped automatically, so you can add
-//  dashboard screenshots later just by dropping the file in.
-//  TODO: check the "services" line of each project matches what you did.
+//  doesn't exist yet is skipped automatically.
+//  All numbers are copied from the ads / Salla screenshots.
+//  Campaign names, account names and store details are blurred.
 // ─────────────────────────────────────────────────────────────
 
 export type Shot = { src: string; caption: string; wide?: boolean };
@@ -31,460 +31,178 @@ const s = (key: string, file: string, caption: string, wide = false): Shot => ({
 });
 
 export const cases: CaseStudy[] = [
-  // ───────────────────────── SYSTEMS ─────────────────────────
+  // ───────────────────────── SNAPCHAT ─────────────────────────
   {
-    key: "pyramids",
-    headline: "An HR system that replaced spreadsheets: attendance, payroll and field visits in one place.",
-    industry: "Restaurants & franchise operations",
-    location: "Egypt",
-    type: "Web system + API",
-    services: ["System design", "Backend & API", "Admin dashboard", "Deployment"],
+    key: "snap-scale",
+    headline: "SAR 27.6K on Snapchat turned into SAR 207.7K in sales: 940 purchases at a 7.51× ROAS.",
+    industry: "Saudi e-commerce store",
+    location: "Saudi Arabia",
+    type: "Snapchat Ads · Mar – Aug 2026",
+    services: ["Sales campaigns", "Creative testing", "Retargeting", "Scaling"],
     overview:
-      "PYRAMIDSHOOD runs several restaurant brands with staff spread across branches. Attendance, lateness and salaries were tracked by hand. I built them one system that knows every employee, every shift and every deduction, so payroll stops being a monthly headache.",
+      "A Saudi online store that needed Snapchat to bring in sales, not views. From March to mid-August 2026 the account served 3,184,370 paid impressions and tracked 940 purchases worth SAR 207,763.14 from SAR 27,652.68 in spend.",
     challenge:
-      "Attendance lived in sheets, branch visits were logged manually per brand, and salary deductions were calculated by hand at the end of every month. Mistakes were easy and nobody had a single source of truth.",
+      "Snapchat is cheap to show ads on and expensive to waste money on. Results swing day to day, and one weak creative left running can eat a week of budget.",
     solution:
-      "A web system with a clean admin dashboard: employees and departments, daily attendance with lateness tracking, automatic payroll and deductions, reports and an archive. Travel and allowance rules are configurable from settings, so the business can change them without a developer.",
+      "Short dated sales campaigns, each built around a fresh creative or offer, plus a retargeting line. Campaigns that didn't bring purchases were switched off quickly, and the budget went to the ones that did. The biggest campaign alone brought 111 purchases worth SAR 25,468.99.",
     features: [
-      { title: "Employees & departments", text: "Full profiles, roles and departments, all searchable from one dashboard." },
-      { title: "Attendance & lateness", text: "Check-in records, absence and lateness tracked per day and per employee." },
-      { title: "Automatic payroll", text: "Salaries and deductions calculated by the system instead of a calculator." },
-      { title: "Allowances & travel", text: "Field visits and travel allowances with amounts editable from settings." },
-      { title: "Reports & archive", text: "Monthly reports ready to export, with history kept for every employee." },
+      { title: "7.51× ROAS", text: "SAR 207,763.14 in purchase value from SAR 27,652.68 in spend." },
+      { title: "940 purchases", text: "At an average cost of SAR 29.42 per purchase." },
+      { title: "3.18M impressions", text: "3,184,370 paid impressions, about SAR 8.68 per 1,000." },
+      { title: "Best campaigns", text: "10.03× (24 purchases), 10.36× and 12.03× ROAS on smaller budgets." },
     ],
     gallery: [
-      s("pyramids", "/img/work/pyramids.jpg", "Secure sign-in for HR staff", true),
-      s("pyramids", "dashboard", "Main dashboard"),
-      s("pyramids", "employees", "Employees list"),
-      s("pyramids", "attendance", "Attendance & lateness"),
-      s("pyramids", "payroll", "Payroll & deductions"),
+      s("snap-scale", "overview", "Account overview: spend, purchases, purchase value and ROAS", true),
+      s("snap-scale", "campaigns", "Campaigns and totals (names hidden)", true),
     ],
     outcome:
-      "HR now works from one system instead of scattered sheets: attendance, payroll and allowances are calculated the same way every month, and managers can see the whole picture in minutes.",
+      "From March to August the account returned SAR 7.51 for every riyal spent, with purchases costing SAR 29.42 on average.",
   },
   {
-    key: "medwizards",
-    headline: "The admin portal behind a medical learning platform.",
-    industry: "Medical education (LMS)",
-    location: "Middle East",
-    type: "Admin dashboard + API",
-    services: ["Dashboard UI", "Backend & API", "Authentication"],
-    overview:
-      "MedWizards is an online learning platform for medical students. Behind it sits this admin portal, where the team manages courses, enrollments and users, and keeps an eye on activity across the platform.",
-    challenge:
-      "A growing course catalogue and student base needed one secure place to manage content and enrollments without touching the database.",
-    solution:
-      "A focused admin portal with secure authentication, course and enrollment management, and activity tracking, built on an API that the student-facing apps share.",
-    features: [
-      { title: "Secure admin access", text: "Protected sign-in for the team, separate from student accounts." },
-      { title: "Courses", text: "Create and organise courses and their content from the dashboard." },
-      { title: "Enrollments", text: "See who joined what, and manage access per student." },
-      { title: "User activity", text: "Track activity across the platform in one place." },
-    ],
-    gallery: [
-      s("medwizards", "/img/work/medwizards.jpg", "Admin sign-in", true),
-      s("medwizards", "dashboard", "Overview dashboard"),
-      s("medwizards", "courses", "Courses management"),
-      s("medwizards", "enrollments", "Enrollments"),
-    ],
-    outcome: "The team runs the whole platform from one portal: content, students and activity, without asking a developer for every change.",
-  },
-  {
-    key: "ethra",
-    headline: "A research platform where academics discover, share and collaborate on medical research.",
-    industry: "Academic research",
+    key: "snap-launch",
+    headline: "A short Snapchat push: SAR 3.67K spend, SAR 38.9K in sales, 10.6× ROAS.",
+    industry: "Saudi e-commerce store",
     location: "Saudi Arabia",
-    type: "Web platform",
-    services: ["Platform design", "Frontend", "Backend & API", "Accounts & roles"],
+    type: "Snapchat Ads · Apr – May 2026",
+    services: ["Sales campaigns", "Offer campaigns", "Budget control"],
     overview:
-      "Ethra (إثراء) is a digital platform for scientific and medical research. Researchers can search a categorised library, follow fields they care about, publish their work for review, and find people working on the same topics.",
+      "A Saudi store running on a small budget around its offers and the Eid season. The campaigns ran from late April to around 20 May 2026 and brought 142 purchases worth SAR 38,931.91 from SAR 3,672.27 in spend.",
     challenge:
-      "Research was scattered and hard to find, and researchers had no simple way to share work in progress or find collaborators in the same field.",
+      "A small budget leaves no room for experiments that don't sell. Every riyal had to go into campaigns that could pay back within days.",
     solution:
-      "An Arabic-first platform with a searchable research library, keyword and category filters, academic accounts, a submission flow for review and publishing, and a way to connect researchers with shared interests.",
+      "Short campaigns tied to specific offers (a 50% sale, an Eid collection) with low daily budgets. Weak campaigns were stopped after a few riyals, and the winning offer got more budget. The best one brought 66 purchases worth SAR 17,941.88 from SAR 1,430.91.",
     features: [
-      { title: "Research library", text: "Categorised research with smart search by keyword and field." },
-      { title: "Academic accounts", text: "Registration and profiles for researchers, students and faculty." },
-      { title: "Submit for review", text: "Researchers upload their work and send it through review to publication." },
-      { title: "Collaboration", text: "Find and contact people working in the same field." },
+      { title: "10.6× ROAS", text: "SAR 38,931.91 in purchase value from SAR 3,672.27 in spend." },
+      { title: "142 purchases", text: "At an average cost of SAR 25.86 per purchase." },
+      { title: "12.54× top campaign", text: "66 purchases from SAR 1,430.91 on one offer." },
+      { title: "14.05× best ROAS", text: "19 purchases worth SAR 5,203.30 from SAR 370.42." },
     ],
     gallery: [
-      s("ethra", "/img/work/ethra.jpg", "Home page", true),
-      s("ethra", "library", "Research library with filters"),
-      s("ethra", "research", "Research detail page"),
-      s("ethra", "register", "Academic account sign-up"),
+      s("snap-launch", "overview", "Account overview: 18 Mar – 6 Jun 2026", true),
+      s("snap-launch", "campaigns", "Campaigns and totals (names hidden)", true),
     ],
-    outcome: "Researchers get one trusted place to find, publish and discuss research, in Arabic and built for the way academics actually work.",
-  },
-  {
-    key: "stars",
-    headline: "A shipping company website with live tracking, built to turn visitors into shipments.",
-    industry: "Logistics & international shipping",
-    location: "Kuwait",
-    type: "Company website + dashboard",
-    services: ["Web design", "Frontend", "Tracking system", "Admin dashboard"],
-    overview:
-      "Stars Gold Logistics ships from Kuwait to more than 50 countries by air, sea and land. The website presents their services, lets customers track a shipment by number, and is managed from its own dashboard.",
-    challenge:
-      "Customers kept calling to ask where their parcel was, and the old presence didn't explain the services or the merchant offers clearly.",
-    solution:
-      "A bilingual, dark-and-gold site that matches the brand: clear service pages (air, sea, land, customs), merchant offers, news, one-tap WhatsApp and call buttons, and a tracking page that shows a shipment's status instantly.",
-    features: [
-      { title: "Shipment tracking", text: "Customers enter a tracking number and see where their shipment is." },
-      { title: "Service pages", text: "Air, sea and land freight, customs clearance and insurance, each explained." },
-      { title: "Merchant offers", text: "Dedicated pricing for merchants to bring in repeat business." },
-      { title: "Admin dashboard", text: "The team manages content, news and shipments from one panel." },
-      { title: "Arabic & English", text: "Full bilingual site with a language switch." },
-    ],
-    gallery: [
-      s("stars", "/img/work/stars.jpg", "Home page", true),
-      s("stars", "tracking", "Track your shipment"),
-      s("stars", "services", "Services"),
-      s("stars", "dashboard", "Admin dashboard"),
-    ],
-    outcome: "Customers can answer \"where is my shipment?\" themselves, and the site now sells the services instead of just listing a phone number.",
+    outcome:
+      "A small budget earned back more than ten times its cost, and every purchase cost SAR 25.86 on average.",
   },
 
-  // ───────────────────────── E-COMMERCE ─────────────────────────
+  // ───────────────────────── TIKTOK ─────────────────────────
   {
-    key: "luma",
-    headline: "A premium fashion store with its own dashboard, built for a brand that sells \"quiet luxury\".",
-    industry: "Fashion retail",
-    location: "Egypt",
-    type: "Custom online store",
-    services: ["Store design", "Frontend", "Backend & dashboard", "Bilingual"],
+    key: "tiktok-longrun",
+    headline: "91 TikTok campaigns, SAR 257K in sales, 1,179 purchases at a 6.81× return.",
+    industry: "Saudi e-commerce store",
+    location: "Saudi Arabia",
+    type: "TikTok Ads · Oct 2024 – Aug 2026",
+    services: ["Web purchase campaigns", "Creative testing", "Scaling winners"],
     overview:
-      "Luma Wear sells modern, refined womenswear. The brand wanted a store that feels as premium as the clothes: calm, editorial and fast, with a dashboard the team can run without a platform subscription.",
+      "A long-running TikTok account for a Saudi store. Across 91 campaigns it brought 1,179 website purchases worth SAR 257,176.96 from SAR 37,775.51 in spend, with an average order of SAR 218.13.",
     challenge:
-      "Template stores looked generic and cluttered next to the brand's photography, and the team needed full control over products, sizes and orders.",
+      "On TikTok a creative wears out fast. What sells this week can stop selling next week, so the account needs a steady flow of new tests without burning the budget on them.",
     solution:
-      "A custom store with editorial product pages, size selection, favourites, cart and buy-now, quick filters by category, Arabic and English, and an admin dashboard for products and orders.",
+      "A cycle of short dated test campaigns. When a creative proved itself, it got its own campaign and a bigger budget. The three biggest live campaigns in the screenshot sit between 7.1× and 9.0× return.",
     features: [
-      { title: "Editorial product pages", text: "Large imagery, clear sizes and a one-tap buy-now button." },
-      { title: "Shop & filters", text: "Filter by category, sort by newest, and search across products." },
-      { title: "Favourites & cart", text: "Save pieces for later and check out in a few steps." },
-      { title: "Own dashboard", text: "Products, stock, sizes and orders managed by the team." },
-      { title: "Arabic & English", text: "A language switch across the whole store." },
+      { title: "6.81× ROAS", text: "Payment-completion ROAS across all 91 campaigns." },
+      { title: "1,179 purchases", text: "At an average cost of SAR 32.04 per purchase." },
+      { title: "SAR 218 AOV", text: "Average order value of SAR 218.13." },
+      { title: "9.0× winning creative", text: "46 purchases worth SAR 10,424 from SAR 1,157.30. Another campaign: 64 purchases at 8.91×." },
     ],
-    gallery: [
-      s("luma", "/img/work/luma.jpg", "Home page", true),
-      s("luma", "shop", "Shop with category filters"),
-      s("luma", "product", "Product page"),
-      s("luma", "dashboard", "Store dashboard"),
-    ],
-    outcome: "A store that matches the brand's look and is fully owned by the brand, from the product pages to the orders.",
+    gallery: [s("tiktok-longrun", "campaigns", "Campaigns and lifetime totals (names hidden)", true)],
+    outcome:
+      "SAR 257,176.96 in tracked sales, with the account returning SAR 6.81 for every riyal spent over its lifetime.",
   },
   {
-    key: "glamour",
-    headline: "A full fashion store for Egypt: hundreds of styles, cash on delivery, 14-day exchanges.",
-    industry: "Fashion & accessories retail",
-    location: "Egypt",
-    type: "Custom online store",
-    services: ["Store design", "Frontend", "Backend & API", "Catalogue setup"],
+    key: "tiktok-sprint",
+    headline: "Ten weeks on TikTok: SAR 6.3K spend, SAR 45.9K in sales, and two campaigns doing the heavy lifting.",
+    industry: "Saudi e-commerce store",
+    location: "Saudi Arabia",
+    type: "TikTok Ads · Mar – Jun 2026",
+    services: ["Test campaigns", "Scaling", "Budget control"],
     overview:
-      "Glamour Aura sells fashion, accessories and SHEIN picks across Egypt. The catalogue is wide, from dresses and modest wear to home and phone accessories, so the store had to make browsing easy and buying feel safe.",
+      "A TikTok account for a Saudi store, 31 March to 6 June 2026. Eight campaigns brought 176 purchases worth SAR 45,877.46 from SAR 6,346.85 in spend.",
     challenge:
-      "A very large catalogue with many sub-categories, and customers who need reassurance before ordering online: delivery times, cash on delivery and exchanges.",
+      "Find what sells quickly and spend as little as possible on what doesn't.",
     solution:
-      "A clean, feminine store with a mega-menu for every category, category pages with filters by size, price and stock, product pages that answer delivery and exchange questions up front, and a help centre for shipping and returns.",
+      "Small tests stayed small (SAR 1 to SAR 139 each), and the budget went to the two campaigns that sold: one brought 111 purchases worth SAR 29,127.89, the other 61 purchases worth SAR 16,024.57.",
     features: [
-      { title: "Mega-menu catalogue", text: "Dozens of categories and sub-categories, one click away." },
-      { title: "Filters that matter", text: "Size, price and in-stock filters, sorted by best selling." },
-      { title: "Trust on every product", text: "Delivery time, cash on delivery and 14-day exchanges shown next to Add to bag." },
-      { title: "Help centre", text: "Order tracking, shipping, returns and policies in one place." },
+      { title: "7.23× ROAS", text: "SAR 45,877.46 in purchase value from SAR 6,346.85 in spend." },
+      { title: "176 purchases", text: "At an average cost of SAR 36.06 per purchase." },
+      { title: "98% from 2 campaigns", text: "172 of the 176 purchases came from the two scaled campaigns." },
+      { title: "8.18× top campaign", text: "111 purchases from SAR 3,562.65." },
     ],
-    gallery: [
-      s("glamour", "/img/work/glamour.jpg", "Home page", true),
-      s("glamour", "categories", "Shop by category & new arrivals"),
-      s("glamour", "category", "Category page with filters"),
-      s("glamour", "product", "Product page"),
-      s("glamour", "help-centre", "Help centre"),
-    ],
-    outcome: "Customers find what they want quickly and get their questions answered before they ask, which is what turns a browser into an order.",
+    gallery: [s("tiktok-sprint", "campaigns", "Campaigns and totals (names hidden)", true)],
+    outcome:
+      "Losing tests cost little, and the two winners turned SAR 5.9K into SAR 45K of sales.",
   },
   {
-    key: "lunora",
-    headline: "A playful women's fashion store that talks like its customers.",
-    industry: "Fashion & beauty retail",
-    location: "Egypt",
-    type: "Custom online store",
-    services: ["Store design", "Frontend", "Backend & API"],
+    key: "tiktok-september",
+    headline: "One month on TikTok: SAR 10.3K spend, SAR 64K in sales, 314 purchases.",
+    industry: "Saudi e-commerce store",
+    location: "Saudi Arabia",
+    type: "TikTok Ads · September 2026",
+    services: ["Web purchase campaigns", "Checkout funnel", "Scaling"],
     overview:
-      "Lunora sells clothes, homewear, bags, shoes, accessories and makeup to women across Egypt. The brand voice is warm and Egyptian, so the store speaks the same way, from the hero to the cart.",
+      "A full month (1–30 September 2026) on TikTok for a Saudi store: 314 purchases worth SAR 64,042.01 from SAR 10,260.40 in spend.",
     challenge:
-      "The brand needed a store that felt personal, not corporate, with discounts and new arrivals front and centre.",
+      "Keep a busy account profitable while it runs several campaigns at once, and watch the whole funnel instead of only the final sale.",
     solution:
-      "A soft pink, Arabic-first store with category tabs, search, discount badges and old/new prices on every product, favourites and a quick add-to-cart, plus a WhatsApp button for questions.",
+      "Each campaign was tracked from checkout to payment. 1,491 people added payment info at SAR 6.88 each, and about 1 in 5 of them completed the purchase. The main campaign brought 147 purchases worth SAR 29,981.",
     features: [
-      { title: "Arabic-first, Egyptian voice", text: "Copy written the way customers talk." },
-      { title: "Deals up front", text: "Discount badges and old vs new price on every product." },
-      { title: "Category tabs & search", text: "Clothes, homewear, bags, shoes, accessories and makeup." },
-      { title: "Favourites & quick add", text: "Save items or add to cart straight from the grid." },
+      { title: "6.24× ROAS", text: "SAR 64,042.01 in purchase value from SAR 10,260.40 in spend." },
+      { title: "314 purchases", text: "At an average cost of SAR 32.68 per purchase." },
+      { title: "1,491 payment adds", text: "At SAR 6.88 each, with checkouts started at SAR 6.94." },
+      { title: "13.6× best ROAS", text: "A smaller campaign: SAR 1,908 in sales from SAR 140.02." },
     ],
-    gallery: [
-      s("lunora", "/img/work/lunora.jpg", "Home page", true),
-      s("lunora", "shop", "Shop with category tabs"),
-      s("lunora", "product", "Product page"),
-    ],
-    outcome: "A store that feels like the brand's Instagram, with offers that are impossible to miss.",
-  },
-  {
-    key: "kaya",
-    headline: "A boutique store with an editorial look for a womenswear label.",
-    industry: "Fashion boutique",
-    location: "Egypt",
-    type: "Online store",
-    services: ["Store design", "Theme customisation", "Catalogue setup"],
-    overview:
-      "KAYA Boutique makes coats, jackets and considered womenswear in soft fabrics. Their store needed to feel like a lookbook while still selling: sizes, sale prices and cash on delivery included.",
-    challenge:
-      "Strong photography and a small, seasonal collection that a busy template would bury.",
-    solution:
-      "An elegant serif-led store with collection pages, product pages that put the photos first, size guide, FAQ and contact pages, sale prices and a delivery bar announcing free shipping and exchanges.",
-    features: [
-      { title: "Lookbook product pages", text: "Large photo galleries next to price, size and Add to cart." },
-      { title: "Collections", text: "Winter collection, coats, jackets, blouses and skirts." },
-      { title: "Size guide & FAQ", text: "Answers that reduce returns before they happen." },
-      { title: "Sale pricing", text: "Old and new prices shown clearly across the store." },
-    ],
-    gallery: [
-      s("kaya", "/img/work/kaya.jpg", "Home page", true),
-      s("kaya", "collection", "Collection page"),
-      s("kaya", "product", "Product page"),
-    ],
-    outcome: "A small label with a store that looks like a big one, and lets the clothes do the selling.",
+    gallery: [s("tiktok-september", "campaigns", "Campaigns, 1–30 Sep 2026 (names hidden)", true)],
+    outcome: "SAR 64K in sales in 30 days, at SAR 6.24 back for every riyal spent.",
   },
 
-  // ───────────────────────── WEBSITES ─────────────────────────
+  // ───────────────────────── GOOGLE ─────────────────────────
   {
-    key: "imtiaz",
-    headline: "The website of Saudi Arabia's first institutional-excellence consultancy.",
-    industry: "Management consulting",
+    key: "google-shopping",
+    headline: "Google Ads for a high-ticket store: SAR 7.93K cost, SAR 78.2K in conversion value, 985% ROAS.",
+    industry: "Saudi e-commerce store (high order value)",
     location: "Saudi Arabia",
-    type: "Corporate website + dashboard",
-    services: ["Web design", "Frontend", "Content dashboard", "Bilingual"],
+    type: "Google Ads · Oct – Nov 2026",
+    services: ["Shopping campaigns", "Conversion tracking", "Budget management"],
     overview:
-      "Imtiaz Al Arabia helps government and private organisations prepare for national and international excellence awards. Its founder led the development of the national excellence model, so the website had to carry that authority.",
+      "A store with expensive products, where each sale is worth a lot. From 1 October to 4 November 2026, Google Ads cost SAR 7.93K and brought SAR 78.2K in conversion value.",
     challenge:
-      "A long list of specialised consulting services and a strong track record that needed to read as credible to senior decision makers.",
+      "With high-priced products, sales come in few and far between. A day without a sale is normal, and judging the campaign day by day leads to bad decisions.",
     solution:
-      "A bilingual corporate site with a dedicated page for every service, the founder's story, vision and values, partners, a blog, and a content dashboard so the team can publish without a developer.",
+      "Shopping campaigns that reach people already searching for the product. With few, large orders, results are read over weeks instead of single days.",
     features: [
-      { title: "Service pages", text: "Awards qualification, quality systems, maturity assessment and more, one page each." },
-      { title: "Founder & credibility", text: "Leadership, track record and partners presented clearly." },
-      { title: "Blog", text: "Articles that show expertise and bring in search traffic." },
-      { title: "Content dashboard", text: "The team updates services, posts and partners themselves." },
+      { title: "985% ROAS", text: "SAR 78.2K in conversion value from SAR 7.93K in cost (about 9.85×)." },
+      { title: "~29 purchases", text: "28.6 purchases as Google counts them, about SAR 2.7K each." },
+      { title: "Shopping", text: "Product ads shown to people searching for what the store sells." },
     ],
-    gallery: [
-      s("imtiaz", "/img/work/imtiaz.jpg", "Home page", true),
-      s("imtiaz", "service", "Service page"),
-      s("imtiaz", "about", "About & values"),
-      s("imtiaz", "dashboard", "Content dashboard"),
-    ],
-    outcome: "A site that matches the firm's reputation and gives every service its own page to rank and to be shared.",
+    gallery: [s("google-shopping", "overview", "Google Ads overview, 1 Oct – 4 Nov 2026 (campaign name hidden)", true)],
+    outcome: "Every riyal spent on Google came back as about SAR 9.85 in conversion value.",
   },
+
+  // ───────────────────────── STORE ─────────────────────────
   {
-    key: "qualiexce",
-    headline: "A consultancy website for quality systems, ISO and governance in the Gulf.",
-    industry: "Quality & ISO consulting",
+    key: "salla-growth",
+    headline: "A Salla store goes from SAR 72.9K to SAR 100.5K a month and hits its 100K goal.",
+    industry: "Saudi e-commerce store (Salla)",
     location: "Saudi Arabia",
-    type: "Corporate website",
-    services: ["Web design", "Frontend", "Backend & API"],
+    type: "Salla dashboard · May – Jul 2026",
+    services: ["Paid ads", "Offers", "Monthly goals"],
     overview:
-      "Qualiexce designs and implements management systems for Gulf organisations: quality, ISO certification and corporate governance. The site introduces the firm, its founder and its approach, and pushes visitors to book a consultation.",
-    challenge: "Explaining a technical service in a way that feels premium and trustworthy, not like a certificate shop.",
+      "The store-side view: what the Salla dashboard shows month after month while the ads run. The numbers below are the store's own monthly summaries.",
+    challenge:
+      "Ad platforms report their own numbers. What matters to the owner is what shows up in the store: orders and sales.",
     solution:
-      "A modern Arabic site with a strong hero, vision and mission, the founder's message, a clear \"why us\" section, areas of excellence, a light/dark switch and a WhatsApp consultation button on every screen.",
+      "Campaigns planned around the store's monthly sales goals in Salla. In May the store passed its SAR 50K goal before the month was over. In July it set a SAR 100K goal and reached it.",
     features: [
-      { title: "Consultation-first", text: "\"Get a consultation\" and WhatsApp buttons on every screen." },
-      { title: "Why us", text: "Custom systems, local expertise and global standards explained simply." },
-      { title: "Founder's message", text: "A personal note that builds trust with decision makers." },
-      { title: "Light & dark mode", text: "A theme switch for comfortable reading." },
+      { title: "May", text: "SAR 55,225.42 in sales and 240 orders before the month ended, above the SAR 50K goal." },
+      { title: "June", text: "SAR 72,891 in sales, 320 orders, 18,938 visits." },
+      { title: "July", text: "SAR 100,489.95 in sales, 443 orders, 26,004 visits. The SAR 100K goal was hit." },
+      { title: "+38%", text: "Sales and orders from June to July, at about a 1.7% conversion rate." },
     ],
     gallery: [
-      s("qualiexce", "/img/work/qualiexce.jpg", "Home page", true),
-      s("qualiexce", "about", "Vision, mission & values"),
-      s("qualiexce", "why", "Why Qualiexce"),
+      s("salla-growth", "july", "July 2026: SAR 100,489.95, 443 orders (store details hidden)", true),
+      s("salla-growth", "june", "June 2026: SAR 72,891, 320 orders"),
+      s("salla-growth", "may", "May 2026: SAR 55,225.42 by mid-month, above the 50K goal"),
     ],
-    outcome: "A website that positions the firm as a long-term partner and turns visits into consultation requests.",
-  },
-  {
-    key: "see",
-    headline: "A premium website for a Saudi elevator company, with online installation and maintenance requests.",
-    industry: "Elevators & escalators",
-    location: "Saudi Arabia",
-    type: "Corporate website",
-    services: ["Web design", "Frontend", "Request forms", "Bilingual"],
-    overview:
-      "SEE (Saudi Elevator & Escalator Co.) designs, imports, installs and maintains elevators for towers, hotels, hospitals and homes across Makkah, Jeddah and Riyadh.",
-    challenge: "Show high-end products to developers and owners, and capture installation and maintenance requests directly from the site.",
-    solution:
-      "A luxurious bilingual site with product pages and technical specs for each elevator type, services, projects, and two clear calls to action in the header: request installation and request maintenance.",
-    features: [
-      { title: "Product range", text: "Panoramic, residential, medical and freight elevators, each with specs." },
-      { title: "Request installation", text: "A form that captures project details straight from the header." },
-      { title: "Request maintenance", text: "Existing clients book maintenance in a few steps." },
-      { title: "Projects", text: "Completed work that proves the company's capacity." },
-    ],
-    gallery: [
-      s("see", "/img/work/see.jpg", "Home page", true),
-      s("see", "product", "Product page with specs"),
-      s("see", "services", "Services"),
-      s("see", "request", "Installation request"),
-    ],
-    outcome: "The site does the first sales conversation: it shows the range, proves the experience and collects requests 24/7.",
-  },
-  {
-    key: "touchone",
-    headline: "A painting & renovation company website that sells with its portfolio.",
-    industry: "Painting, decor & renovation",
-    location: "Saudi Arabia",
-    type: "Corporate website",
-    services: ["Web design", "Frontend", "Projects & blog"],
-    overview:
-      "Touch One does interior and exterior painting, gypsum decor, facade restoration, insulation and renovation in Saudi Arabia. Their work is visual, so the website is built around it.",
-    challenge: "Turn a services list into something a homeowner trusts enough to request a quote.",
-    solution:
-      "A dark, golden site with service detail pages, project case pages (villas, offices, apartments), a blog, experience counters and a quote request on every page, plus WhatsApp.",
-    features: [
-      { title: "Service pages", text: "Six services, each with its own detail page and quote button." },
-      { title: "Project gallery", text: "Real projects in Riyadh, Jeddah and Khobar." },
-      { title: "Quote requests", text: "\"Request a quote\" and site visit buttons everywhere." },
-      { title: "Blog", text: "Content that answers customers' questions and helps SEO." },
-    ],
-    gallery: [
-      s("touchone", "/img/work/touchone.jpg", "Home page", true),
-      s("touchone", "services", "Services"),
-      s("touchone", "project", "Project page"),
-    ],
-    outcome: "A site that lets the work speak and makes asking for a quote the obvious next step.",
-  },
-  {
-    key: "ansary",
-    headline: "Luxury transport for pilgrims and VIP guests, bookable online.",
-    industry: "Transport & hospitality",
-    location: "Saudi Arabia",
-    type: "Booking website",
-    services: ["Web design", "Frontend", "Booking flow", "Bilingual"],
-    overview:
-      "Ansary provides premium transport for pilgrims, Umrah visitors and VIP guests: airport pickups in Jeddah, Madinah and Taif, trips between cities, and guided visits to Islamic and historic sites.",
-    challenge: "International guests need to trust a company they've never met and book a car before they land.",
-    solution:
-      "A warm, cinematic bilingual site showing the services, the fleet and the trips, with FAQ, clear policies and a booking request on every section, plus phone and WhatsApp buttons.",
-    features: [
-      { title: "Airport service", text: "Pickups from Jeddah, Madinah and Taif airports, timed to flights." },
-      { title: "Fleet", text: "The vehicles guests can choose, presented clearly." },
-      { title: "Trips & visits", text: "Intercity trips and guided visits in Makkah, Madinah, Jeddah and Taif." },
-      { title: "Policies & FAQ", text: "Cancellation, terms and privacy that answer questions before booking." },
-    ],
-    gallery: [
-      s("ansary", "/img/work/ansary.jpg", "Home page", true),
-      s("ansary", "fleet", "Fleet"),
-      s("ansary", "services", "Services"),
-    ],
-    outcome: "Guests can understand the service, trust it and request a booking before they travel.",
-  },
-  {
-    key: "kmfilms",
-    headline: "A cinematic website for a wedding films studio.",
-    industry: "Wedding films & photography",
-    location: "Egypt",
-    type: "Portfolio & booking website",
-    services: ["Web design", "Frontend", "Films & packages", "Bilingual"],
-    overview:
-      "KM Films shoots cinematic wedding films across Egypt. Couples choose a studio by feeling, so the site had to feel like one of their films.",
-    challenge: "Show the films beautifully, explain the packages and get couples to book a date.",
-    solution:
-      "A black-and-white, film-like site with a films library and a page per couple, packages with direct booking links, the studio's story and process, and Arabic and English versions.",
-    features: [
-      { title: "Films library", text: "Every wedding has its own page with the film and the story." },
-      { title: "Packages", text: "Classic, Signature and Cinema, each with a booking button." },
-      { title: "How we work", text: "The process from the first call to delivering the film." },
-      { title: "Arabic & English", text: "Bilingual for couples in Egypt and abroad." },
-    ],
-    gallery: [
-      s("kmfilms", "/img/work/kmfilms.jpg", "Home page", true),
-      s("kmfilms", "films", "Films library"),
-      s("kmfilms", "film", "Single film page"),
-      s("kmfilms", "packages", "Packages"),
-    ],
-    outcome: "A site that feels like the studio's films and moves couples from watching to booking.",
-  },
-  {
-    key: "mal",
-    headline: "A finance and business news platform built for reading.",
-    industry: "Media & publishing",
-    location: "Middle East",
-    type: "Content platform",
-    services: ["Web design", "Frontend", "CMS", "SEO structure"],
-    overview:
-      "Mal & Aamal (مال وأعمال) publishes analysis on markets, macroeconomics, entrepreneurship and fintech for Arabic readers who want to make smarter money decisions.",
-    challenge: "Make dense financial content easy to browse and comfortable to read, and easy for editors to publish.",
-    solution:
-      "A clean Arabic reading platform with categories, article cards showing date and reading time, a full article page, author bylines, and a CMS for the editorial team.",
-    features: [
-      { title: "Categories", text: "Markets, macroeconomics, entrepreneurship, fintech and real estate." },
-      { title: "Reading-first articles", text: "Comfortable typography, reading time and author on every post." },
-      { title: "CMS", text: "Editors publish and organise articles without a developer." },
-      { title: "SEO-ready", text: "Clean URLs and structure for search engines." },
-    ],
-    gallery: [
-      s("mal", "/img/work/mal.jpg", "Home page", true),
-      s("mal", "articles", "Articles"),
-      s("mal", "article", "Article page"),
-    ],
-    outcome: "A publication that is pleasant to read and simple to run, built to grow with every article.",
-  },
-  {
-    key: "almadhi",
-    headline: "The official website of a family, preserving generations of history.",
-    industry: "Heritage & community",
-    location: "Saudi Arabia",
-    type: "Content website",
-    services: ["Web design", "Frontend", "Content structure"],
-    overview:
-      "The Al-Madhi family's official site tells the family's story from the 11th century AH to today: its scholars, its annual gathering, its academic excellence award, its family tree and its landmarks in Najd.",
-    challenge: "Organise centuries of history, biographies and events into something the youngest generation will actually explore.",
-    solution:
-      "A dignified green-and-gold site with sections for history, biographies, the annual camp archive by year, the excellence award, a documented family tree, landmarks and a photo gallery.",
-    features: [
-      { title: "History", text: "The family's story told across the centuries." },
-      { title: "Biographies", text: "Profiles of the family's scholars and figures." },
-      { title: "Annual camp archive", text: "Thirty years of gatherings, organised by year." },
-      { title: "Family tree", text: "A documented lineage linking generations." },
-      { title: "Gallery", text: "Photos that keep the memory of every occasion." },
-    ],
-    gallery: [
-      s("almadhi", "/img/work/almadhi.jpg", "Home page", true),
-      s("almadhi", "history", "History"),
-      s("almadhi", "tree", "Family tree"),
-      s("almadhi", "gallery", "Photo gallery"),
-    ],
-    outcome: "A living archive that keeps the family's memory in one place for every generation.",
-  },
-  {
-    key: "techflow",
-    headline: "The website of a digital agency that builds websites, stores and brands.",
-    industry: "Digital agency",
-    location: "Saudi Arabia",
-    type: "Agency website",
-    services: ["Web design", "Frontend", "Portfolio & blog"],
-    overview:
-      "Tech Flow is a digital agency offering web design, e-commerce, mobile apps, branding, SEO and digital marketing for businesses in Saudi Arabia.",
-    challenge: "Sell the agency's process and results, not just a list of services.",
-    solution:
-      "A fresh, mint-toned site with a services section, results counters, a step-by-step journey of how projects run, a works portfolio, testimonials, a blog and a \"start your project\" call to action throughout.",
-    features: [
-      { title: "Services", text: "Websites, stores, apps, branding, SEO and marketing explained." },
-      { title: "The journey", text: "Six stages from discovery to growth, with timelines." },
-      { title: "Portfolio", text: "A works page that shows real client projects." },
-      { title: "Blog & testimonials", text: "Proof and content that build trust." },
-    ],
-    gallery: [
-      s("techflow", "/img/work/techflow.jpg", "Home page", true),
-      s("techflow", "works", "Works portfolio"),
-      s("techflow", "blog", "Blog"),
-    ],
-    outcome: "An agency site that explains how the work gets done and invites the next client to start.",
+    outcome: "From June to July, sales grew 38% and orders went from 320 to 443.",
   },
 ];
