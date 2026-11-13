@@ -12,13 +12,11 @@ export default function SiteFooter({ c }: { c: SiteContent }) {
       </a>
       <ContactForm t={c.contact} whatsapp={s.whatsapp} email={s.email} />
       <div className="footer__meta">
-        {s.email && <span>{s.email}</span>}
+        <span>{s.email}</span>
         {s.whatsapp && <span dir="ltr">WhatsApp: +{s.whatsapp}</span>}
-        {s.github && (
-          <a href={`https://github.com/${s.github}`} target="_blank" rel="noreferrer">
-            GitHub: @{s.github}
-          </a>
-        )}
+        <a href={`https://github.com/${s.github}`} target="_blank" rel="noreferrer">
+          GitHub: @{s.github}
+        </a>
         <span>{c.location}</span>
         <span>
           © {s.year} {s.logo}®
