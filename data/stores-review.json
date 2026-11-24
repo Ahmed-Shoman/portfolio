@@ -1,0 +1,170 @@
+{
+  "included": [
+    {
+      "domain": "karamhomeksa.com",
+      "url": "https://karamhomeksa.com/",
+      "name": "Karam Home",
+      "type": "Home",
+      "platform": "salla",
+      "img": "/img/stores/karamhomeksa.com.jpg"
+    },
+    {
+      "domain": "mstkt-zhb.com",
+      "url": "https://mstkt-zhb.com/",
+      "name": "Mastic Gold",
+      "type": "Beauty",
+      "platform": "salla",
+      "img": "/img/stores/mstkt-zhb.com.jpg"
+    },
+    {
+      "domain": "thurayacollection.com",
+      "url": "https://thurayacollection.com/",
+      "name": "Thuraya Collection",
+      "type": "Abayas",
+      "platform": "salla",
+      "img": "/img/stores/thurayacollection.com.jpg"
+    },
+    {
+      "domain": "alghailani-honey.com",
+      "url": "https://alghailani-honey.com/",
+      "name": "Al Ghailani Honey",
+      "type": "Honey & Dates",
+      "platform": "salla",
+      "img": "/img/stores/alghailani-honey.com.jpg"
+    },
+    {
+      "domain": "oromiffa-roaster.com",
+      "url": "https://oromiffa-roaster.com/ar",
+      "name": "Oromiffa Roaster",
+      "type": "Coffee",
+      "platform": "salla",
+      "img": "/img/stores/oromiffa-roaster.com.jpg"
+    },
+    {
+      "domain": "daniacreative.com",
+      "url": "https://daniacreative.com/",
+      "name": "Dania Creative",
+      "type": "Gifts",
+      "platform": "salla",
+      "img": "/img/stores/daniacreative.com.jpg"
+    },
+    {
+      "domain": "lilikids1.com",
+      "url": "https://lilikids1.com/",
+      "name": "Lili Kids",
+      "type": "Kids",
+      "platform": "salla",
+      "img": "/img/stores/lilikids1.com.jpg"
+    },
+    {
+      "domain": "eleganthubs.com",
+      "url": "https://eleganthubs.com/",
+      "name": "Elegant Hub",
+      "type": "Jewelry",
+      "platform": "salla",
+      "img": "/img/stores/eleganthubs.com.jpg"
+    },
+    {
+      "domain": "petbasket-sa.com",
+      "url": "https://petbasket-sa.com/",
+      "name": "Pet Basket",
+      "type": "Pets",
+      "platform": "salla",
+      "img": "/img/stores/petbasket-sa.com.jpg"
+    },
+    {
+      "domain": "glowstep-sa.com",
+      "url": "https://glowstep-sa.com/",
+      "name": "Glow Step",
+      "type": "Beauty",
+      "platform": "salla",
+      "img": "/img/stores/glowstep-sa.com.jpg"
+    },
+    {
+      "domain": "rawnaq-perfume.com",
+      "url": "https://rawnaq-perfume.com/",
+      "name": "Rawnaq",
+      "type": "Perfume",
+      "platform": "salla",
+      "img": "/img/stores/rawnaq-perfume.com.jpg"
+    },
+    {
+      "domain": "zainora-sa.com",
+      "url": "https://zainora-sa.com",
+      "name": "Zainora",
+      "type": "Abayas",
+      "platform": "salla",
+      "img": "/img/stores/zainora-sa.com.jpg"
+    },
+    {
+      "domain": "dimi-sa.com",
+      "url": "https://dimi-sa.com/",
+      "name": "Demy",
+      "type": "Fashion",
+      "platform": "salla",
+      "img": "/img/stores/dimi-sa.com.jpg"
+    },
+    {
+      "domain": "budoorhoney.com",
+      "url": "https://budoorhoney.com/",
+      "name": "Budoor Honey",
+      "type": "Honey & Nuts",
+      "platform": "salla",
+      "img": "/img/stores/budoorhoney.com.jpg"
+    },
+    {
+      "domain": "dhiafsa.com",
+      "url": "https://dhiafsa.com/",
+      "name": "Diyaf",
+      "type": "Hospitality",
+      "platform": "salla",
+      "img": "/img/stores/dhiafsa.com.jpg"
+    },
+    {
+      "domain": "etabaya.com",
+      "url": "https://etabaya.com/",
+      "name": "ET Abaya",
+      "type": "Abayas",
+      "platform": "salla",
+      "img": "/img/stores/etabaya.com.jpg"
+    }
+  ],
+  "excluded": [
+    {
+      "domain": "florascape.co",
+      "platform": "wordpress",
+      "status": "closed",
+      "why": "closed (matched المتجر تحت الصيانة|تحت الصيانة|وضع الصيا)"
+    },
+    {
+      "domain": "lune5.zid.store",
+      "platform": "zid",
+      "status": "down",
+      "why": "down (HTTP 404)"
+    },
+    {
+      "domain": "masar-alamtyeaz.com",
+      "platform": "salla",
+      "status": "closed",
+      "why": "closed (matched المتجر تحت الصيانة|تحت الصيانة|وضع الصيا)"
+    },
+    {
+      "domain": "mulhehah-ksa.store",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://mulhehah-ksa.store/)"
+    },
+    {
+      "domain": "luvina-sa.com",
+      "platform": "other",
+      "status": "ok",
+      "why": "platform: other"
+    },
+    {
+      "domain": "luxeaura-sa.com",
+      "platform": "wordpress",
+      "status": "ok",
+      "why": "platform: wordpress"
+    }
+  ]
+}

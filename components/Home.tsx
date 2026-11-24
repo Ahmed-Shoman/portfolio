@@ -3,6 +3,7 @@ import Header from "./Header";
 import Effects from "./Effects";
 import ProjectsRail from "./ProjectsRail";
 import WorkGrid from "./WorkGrid";
+import StoresGrid from "./StoresGrid";
 import SiteFooter from "./SiteFooter";
 import WhatsAppFab from "./WhatsAppFab";
 import Arrow from "./Arrow";
@@ -119,10 +120,25 @@ export default function Home({ c }: { c: SiteContent }) {
           <WorkGrid work={c.work} cats={c.workCats} ui={c.workUi} />
         </section>
 
+        {/* ═══ STORES ═══ */}
+        <section className="stores" id="stores">
+          <div className="section-head">
+            <span className="section-head__idx">(04)</span>
+            <h2 className="section-head__title">{c.storesHead.title}</h2>
+            <span className="section-head__note">
+              // {c.stores.length} {c.storesHead.note}
+            </span>
+          </div>
+          <p className="stores__lead reveal">
+            <mark className="mk mk--lime">+{c.stores.length}</mark> {c.storesHead.lead}
+          </p>
+          <StoresGrid stores={c.stores} ui={c.storesUi} />
+        </section>
+
         {/* ═══ PROCESS ═══ */}
         <section className="process" id="process">
           <div className="section-head">
-            <span className="section-head__idx">(04)</span>
+            <span className="section-head__idx">(05)</span>
             <h2 className="section-head__title">{c.processHead.title}</h2>
             <span className="section-head__note">{c.processHead.note}</span>
           </div>

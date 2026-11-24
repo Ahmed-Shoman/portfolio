@@ -5,3 +5,6 @@ out
 next-env.d.ts
 *.tsbuildinfo
 scripts/stores.csv
+data/stores.json
+scripts/review.html
+scripts/manual-excluded.json

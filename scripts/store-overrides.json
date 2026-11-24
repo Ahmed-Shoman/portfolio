@@ -1,0 +1,18 @@
+{
+  "karamhomeksa.com": { "name": "Karam Home", "type": "Home" },
+  "etabaya.com": { "name": "ET Abaya", "type": "Abayas" },
+  "mstkt-zhb.com": { "name": "Mastic Gold", "type": "Beauty" },
+  "thurayacollection.com": { "name": "Thuraya Collection", "type": "Abayas" },
+  "alghailani-honey.com": { "name": "Al Ghailani Honey", "type": "Honey & Dates" },
+  "oromiffa-roaster.com": { "name": "Oromiffa Roaster", "type": "Coffee" },
+  "daniacreative.com": { "name": "Dania Creative", "type": "Gifts" },
+  "lilikids1.com": { "name": "Lili Kids", "type": "Kids" },
+  "eleganthubs.com": { "name": "Elegant Hub", "type": "Jewelry" },
+  "petbasket-sa.com": { "name": "Pet Basket", "type": "Pets" },
+  "glowstep-sa.com": { "name": "Glow Step", "type": "Beauty" },
+  "rawnaq-perfume.com": { "name": "Rawnaq", "type": "Perfume" },
+  "zainora-sa.com": { "name": "Zainora", "type": "Abayas" },
+  "dimi-sa.com": { "name": "Demy", "type": "Fashion" },
+  "budoorhoney.com": { "name": "Budoor Honey", "type": "Honey & Nuts" },
+  "dhiafsa.com": { "name": "Diyaf", "type": "Hospitality" }
+}

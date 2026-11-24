@@ -33,6 +33,21 @@
 @media (prefers-reduced-motion:reduce){.shot__frame,.shot__visit,.work__filter{transition:none}}
 .shot[hidden]{display:none}
 
+/* ═══ STORES (Salla / Zid / Shopify) ═══ */
+.stores{padding:0 var(--pad) 96px}
+.stores__lead{margin-top:40px;max-width:1100px;font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:clamp(28px,4.2vw,64px);line-height:1.05;letter-spacing:-.01em}
+.stores__lead .mk{display:inline-block}
+.stores .work__filters{margin-top:36px}
+.stores__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px 24px}
+.store .shot__name{font-size:clamp(20px,1.7vw,26px);min-width:0;overflow-wrap:anywhere}
+.store .shot__frame img{width:100%}
+.store__chip--salla{background:var(--mint)}.store__chip--zid{background:var(--gold)}.store__chip--shopify{background:var(--lime)}
+.stores__more{display:flex;justify-content:center;margin-top:48px}
+.stores__more .pill{cursor:pointer}
+.stores__more sup{font-size:10px;opacity:.6}
+@media (max-width:1100px){.stores__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.stores__grid{grid-template-columns:1fr}}
+
 /* ═══ HEADER ACTIONS / LANG SWITCH ═══ */
 .header__actions{display:flex;align-items:center;gap:12px}
 .lang-switch{display:inline-flex;align-items:center;justify-content:center;min-width:44px;height:44px;padding:0 12px;border:2px solid var(--ink);border-radius:999px;font-weight:700;font-size:14px;background:var(--ivory);transition:background .2s,transform .18s,box-shadow .18s}
