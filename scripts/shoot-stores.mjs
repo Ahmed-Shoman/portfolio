@@ -87,6 +87,7 @@ const CLOSED_RE = [
   /opening soon|enter store using password|this store is password protected|password-page/i,
   /domain (is )?for sale|buy this domain|this domain may be for sale|هذا (النطاق|الدومين) للبيع/i,
   /this store is unavailable|store unavailable|المتجر غير متاح|متجر غير متوفر/i,
+  /تم تغيير رابط هذا المتجر|store (link|url) (has )?(been )?changed/i,
 ];
 
 const HIDE_CSS = `
@@ -114,7 +115,7 @@ async function shoot(browser, row) {
   const url = toUrl(row.url);
   const domain = domainOf(row.url);
   const rec = {
-    domain, url, platform_hint: row.platform_hint || "", month: row.month || "", work: row.work || "",
+    domain, src: domain, url, platform_hint: row.platform_hint || "", month: row.month || "", work: row.work || "",
     status: "down", platform: normHint(row.platform_hint) || "other", detected: false,
     title: "", description: "", siteName: "", lang: "", finalUrl: "", img: "", uniform: null, reason: "",
   };
@@ -196,13 +197,21 @@ async function main() {
   await fs.mkdir(OUT_DIR, { recursive: true });
   await fs.mkdir(path.dirname(JSON_OUT), { recursive: true });
 
+  // SKIP_DONE=1 → only shoot stores that aren't in data/stores.json yet (keeps the old results)
+  const skip = process.env.SKIP_DONE === "1" && !only;
   let prev = [];
-  if (only) prev = JSON.parse(await fs.readFile(JSON_OUT, "utf8").catch(() => "[]"));
+  if (only || skip) prev = JSON.parse(await fs.readFile(JSON_OUT, "utf8").catch(() => "[]"));
+  if (skip) {
+    const had = new Set(prev.flatMap((p) => [p.domain, p.src]).filter(Boolean));
+    const before = list.length;
+    list = list.filter((r) => !had.has(domainOf(r.url)));
+    console.log(`Skipping ${before - list.length} stores already shot · ${list.length} new`);
+  }
 
   const save = async () => {
     const got = results.filter(Boolean);
     const doneSet = new Set(got.map((r) => r.domain));
-    const base = only ? prev.filter((p) => !doneSet.has(p.domain) && !only.includes(p.domain)) : [];
+    const base = only || skip ? prev.filter((p) => !doneSet.has(p.domain) && !(only || []).includes(p.domain)) : [];
     const uniq = new Map(); for (const r of [...base, ...got]) uniq.set(r.domain, r);
     await fs.writeFile(JSON_OUT, JSON.stringify([...uniq.values()], null, 2));
   };
@@ -212,7 +221,7 @@ async function main() {
   await Promise.all(Array.from({ length: CONCURRENCY }, async () => {
     while (next < list.length) {
       const i = next++;
-      results[i] = await shoot(browser, list[i]).catch((e) => ({ domain: domainOf(list[i].url), status: "down", reason: String(e) }));
+      results[i] = await shoot(browser, list[i]).catch((e) => ({ domain: domainOf(list[i].url), src: domainOf(list[i].url), status: "down", reason: String(e) }));
       done++;
       const r = results[i];
       if (done % 5 === 0) await save();

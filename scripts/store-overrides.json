@@ -1,18 +1,414 @@
 {
-  "karamhomeksa.com": { "name": "Karam Home", "type": "Home" },
-  "etabaya.com": { "name": "ET Abaya", "type": "Abayas" },
-  "mstkt-zhb.com": { "name": "Mastic Gold", "type": "Beauty" },
-  "thurayacollection.com": { "name": "Thuraya Collection", "type": "Abayas" },
-  "alghailani-honey.com": { "name": "Al Ghailani Honey", "type": "Honey & Dates" },
-  "oromiffa-roaster.com": { "name": "Oromiffa Roaster", "type": "Coffee" },
-  "daniacreative.com": { "name": "Dania Creative", "type": "Gifts" },
-  "lilikids1.com": { "name": "Lili Kids", "type": "Kids" },
-  "eleganthubs.com": { "name": "Elegant Hub", "type": "Jewelry" },
-  "petbasket-sa.com": { "name": "Pet Basket", "type": "Pets" },
-  "glowstep-sa.com": { "name": "Glow Step", "type": "Beauty" },
-  "rawnaq-perfume.com": { "name": "Rawnaq", "type": "Perfume" },
-  "zainora-sa.com": { "name": "Zainora", "type": "Abayas" },
-  "dimi-sa.com": { "name": "Demy", "type": "Fashion" },
-  "budoorhoney.com": { "name": "Budoor Honey", "type": "Honey & Nuts" },
-  "dhiafsa.com": { "name": "Diyaf", "type": "Hospitality" }
+  "karamhomeksa.com": {
+    "name": "Karam Home",
+    "type": "Home"
+  },
+  "etabaya.com": {
+    "name": "ET Abaya",
+    "type": "Abayas"
+  },
+  "mstkt-zhb.com": {
+    "name": "Mastic Gold",
+    "type": "Beauty"
+  },
+  "thurayacollection.com": {
+    "name": "Thuraya Collection",
+    "type": "Abayas"
+  },
+  "alghailani-honey.com": {
+    "name": "Al Ghailani Honey",
+    "type": "Honey & Dates"
+  },
+  "oromiffa-roaster.com": {
+    "name": "Oromiffa Roaster",
+    "type": "Coffee"
+  },
+  "daniacreative.com": {
+    "name": "Dania Creative",
+    "type": "Gifts"
+  },
+  "lilikids1.com": {
+    "name": "Lili Kids",
+    "type": "Kids"
+  },
+  "eleganthubs.com": {
+    "name": "Elegant Hub",
+    "type": "Jewelry"
+  },
+  "petbasket-sa.com": {
+    "name": "Pet Basket",
+    "type": "Pets"
+  },
+  "glowstep-sa.com": {
+    "name": "Glow Step",
+    "type": "Beauty"
+  },
+  "rawnaq-perfume.com": {
+    "name": "Rawnaq",
+    "type": "Perfume"
+  },
+  "zainora-sa.com": {
+    "name": "Zainora",
+    "type": "Abayas"
+  },
+  "dimi-sa.com": {
+    "name": "Demy",
+    "type": "Fashion"
+  },
+  "budoorhoney.com": {
+    "name": "Budoor Honey",
+    "type": "Honey & Nuts"
+  },
+  "dhiafsa.com": {
+    "name": "Diyaf",
+    "type": "Hospitality"
+  },
+  "innovation-pioneer.com": {
+    "name": "Innovation Pioneers",
+    "type": "Tools"
+  },
+  "jessygem.com": {
+    "name": "Jessy Gem",
+    "type": "Jewelry"
+  },
+  "dukanphone.com": {
+    "name": "Dukan Phone",
+    "type": "Electronics"
+  },
+  "madinajewelleries.com": {
+    "name": "Madina Jewelleries",
+    "type": "Jewelry"
+  },
+  "gol01.com": {
+    "name": "Golden Touch",
+    "type": "Jewelry"
+  },
+  "albeatalfilastini.com": {
+    "name": "Al Beit Al Filastini",
+    "type": "Food"
+  },
+  "om-tariq.com": {
+    "name": "Om Tariq",
+    "type": "Spices"
+  },
+  "championsportssa.com": {
+    "name": "Champion Sports",
+    "type": "Sports"
+  },
+  "rawnaj.com": {
+    "name": "Rawnaj",
+    "type": "Beauty"
+  },
+  "um-khalid2.com": {
+    "name": "Um Khaled",
+    "type": "Beauty"
+  },
+  "monaqat.com": {
+    "name": "Monaqat",
+    "type": "Fashion"
+  },
+  "odred.sa": {
+    "name": "Odred",
+    "type": "Perfume"
+  },
+  "ronqhair.store": {
+    "name": "Ronq Hair",
+    "type": "Hair Care"
+  },
+  "reeltv-2.com": {
+    "name": "Reel",
+    "type": "Subscriptions"
+  },
+  "theswordcoffee.com": {
+    "name": "The Sword Coffee",
+    "type": "Coffee"
+  },
+  "dreeam-beauty.com": {
+    "name": "Dream Beauty",
+    "type": "Beauty"
+  },
+  "cobrafits.com": {
+    "name": "Cobra Fits",
+    "type": "Sports"
+  },
+  "gag.sa": {
+    "name": "Glow and Give",
+    "type": "Gifts"
+  },
+  "taiebat-alkhair.com": {
+    "name": "Taiebat Al Khair",
+    "type": "Meat"
+  },
+  "epure-sa.com": {
+    "name": "Épure",
+    "type": "Perfume"
+  },
+  "shop.unitedgulf-sa.com": {
+    "name": "United Gulf",
+    "type": "HVAC Parts"
+  },
+  "alint-sa.com": {
+    "name": "Alint",
+    "type": "Beauty"
+  },
+  "areentv.com": {
+    "name": "AreenTV",
+    "type": "Subscriptions"
+  },
+  "nwadir.sa": {
+    "name": "Nwadir Telecom",
+    "type": "Electronics"
+  },
+  "lamsamkhmalia.com": {
+    "name": "Lamsa Mkhmalia",
+    "type": "Beauty"
+  },
+  "espere-sa.com": {
+    "name": "Espère",
+    "type": "Perfume"
+  },
+  "oud-boxes.com": {
+    "name": "Oud Boxes",
+    "type": "Perfume"
+  },
+  "eta.sa": {
+    "name": "Eta",
+    "type": "Coffee"
+  },
+  "specialcarsa.com": {
+    "name": "Special Car",
+    "type": "Car Care"
+  },
+  "ruganda2022.com": {
+    "name": "Rojenda",
+    "type": "Beauty"
+  },
+  "khzama-store.com": {
+    "name": "Khzama",
+    "type": "Beauty"
+  },
+  "my-kiwi.com": {
+    "name": "Kiwi",
+    "type": "Kids"
+  },
+  "untamed-ksa.com": {
+    "name": "Untamed",
+    "type": "Beard Care"
+  },
+  "premiumajwas.com": {
+    "name": "Premium Ajwa",
+    "type": "Honey & Dates"
+  },
+  "h-designn.com": {
+    "name": "H Design",
+    "type": "Abayas"
+  },
+  "feviumsa.com": {
+    "name": "Fevium",
+    "type": "Perfume"
+  },
+  "miskad.com": {
+    "name": "Miskad",
+    "type": "Perfume"
+  },
+  "hullahjewelry.com": {
+    "name": "Hullah Jewelry",
+    "type": "Jewelry"
+  },
+  "yush-store.com": {
+    "name": "Yush",
+    "type": "Beauty"
+  },
+  "r2stor.com": {
+    "name": "R2 Store",
+    "type": "Subscriptions"
+  },
+  "moonboutique-ksa.com": {
+    "name": "Moon Boutique",
+    "type": "Fashion"
+  },
+  "romen-store.com": {
+    "name": "Romen",
+    "type": "Hot Sauces"
+  },
+  "elsakhra.com": {
+    "name": "Awdat Al Sakhra",
+    "type": "Food"
+  },
+  "wowgloww.com": {
+    "name": "Wow Glow",
+    "type": "Health"
+  },
+  "coffeedeals.sa": {
+    "name": "Coffee Deals",
+    "type": "Coffee"
+  },
+  "taifcard.com": {
+    "name": "Taif Card",
+    "type": "Digital Cards"
+  },
+  "monaliz-sa.com": {
+    "name": "Monaliz",
+    "type": "Abayas"
+  },
+  "auraattiresksa.com": {
+    "name": "Aura Attire",
+    "type": "Abayas"
+  },
+  "emerald20.com": {
+    "name": "Emerald",
+    "type": "Abayas"
+  },
+  "xphone-sa.com": {
+    "name": "Xphone",
+    "type": "Electronics"
+  },
+  "hikayat-lawha.com": {
+    "name": "Hikayat Lawha",
+    "type": "Wall Art"
+  },
+  "lilia-beauty-products.com": {
+    "name": "Lilia",
+    "type": "Body Care"
+  },
+  "oecean.com": {
+    "name": "Ocean",
+    "type": "Swimwear"
+  },
+  "on1mark.com": {
+    "name": "One Mark",
+    "type": "Digital Services"
+  },
+  "green-aura.store": {
+    "name": "Green Aura",
+    "type": "Tea"
+  },
+  "sorbo-bottles.com": {
+    "name": "Sorbo Bottles",
+    "type": "Drinkware"
+  },
+  "queen-sstore.com": {
+    "name": "Queen Store",
+    "type": "Natural Care"
+  },
+  "elegant-veil.com": {
+    "name": "Elegant Veil",
+    "type": "Abayas"
+  },
+  "darainpay.store": {
+    "name": "Durar & Darain",
+    "type": "Digital Cards"
+  },
+  "mrades.com": {
+    "name": "Mrades",
+    "type": "Perfume"
+  },
+  "knight-ks.com": {
+    "name": "Knight",
+    "type": "Eyewear"
+  },
+  "fuelupstore.com": {
+    "name": "Fuel Up",
+    "type": "Supplements"
+  },
+  "store.nasmah-tea.com": {
+    "name": "Nasmati",
+    "type": "Tea"
+  },
+  "gloowart.com": {
+    "name": "Gloow Art",
+    "type": "Wall Art"
+  },
+  "alkreaishan.com": {
+    "name": "Al Kreaishan",
+    "type": "Natural Care"
+  },
+  "khatif-aladwa-store.com": {
+    "name": "Khatif Al Adwa",
+    "type": "Car Tech"
+  },
+  "beautilia.net": {
+    "name": "Beautilia",
+    "type": "Beauty"
+  },
+  "julie-sa.com": {
+    "name": "Julia",
+    "type": "Beauty"
+  },
+  "ainhaa943.com": {
+    "name": "Ainhaa",
+    "type": "Fashion"
+  },
+  "mrkzalafk.com": {
+    "name": "Al Ufuq",
+    "type": "Education"
+  },
+  "alodaifihoney.com": {
+    "name": "Al Odaifi Honey",
+    "type": "Honey & Dates"
+  },
+  "hlay.sa": {
+    "name": "Hlay",
+    "type": "Coffee"
+  },
+  "treasureisland.sa": {
+    "name": "Treasure Island",
+    "type": "Fashion"
+  },
+  "flawrnyesh.com": {
+    "name": "Flawr Nyesh",
+    "type": "Perfume"
+  },
+  "partline2.com": {
+    "name": "Part Line",
+    "type": "Auto Parts"
+  },
+  "thraastore.com": {
+    "name": "Thraa",
+    "type": "Fashion"
+  },
+  "max10phone.com": {
+    "name": "Max 10 Phone",
+    "type": "Electronics"
+  },
+  "pureskinstore.zid.store": {
+    "name": "Pure Skin",
+    "type": "Beauty"
+  },
+  "henasedr.com": {
+    "name": "Nature Stores",
+    "type": "Hair Care"
+  },
+  "darlallasultana.com": {
+    "name": "Dar Lalla Sultana",
+    "type": "Fashion"
+  },
+  "lolo-e.com": {
+    "name": "Lolo Jewelry",
+    "type": "Jewelry"
+  },
+  "alganas.com": {
+    "name": "Al Qannas",
+    "type": "Air Rifles"
+  },
+  "teckzone.online": {
+    "name": "Tech Zone",
+    "type": "Electronics"
+  },
+  "srayaaltrath.com": {
+    "name": "Saraya Al Turath",
+    "type": "Heritage"
+  },
+  "fatoo-boxes.com": {
+    "name": "Fatoo Boxes",
+    "type": "Spices"
+  },
+  "murujalaseel.com": {
+    "name": "Muruj Al Aseel",
+    "type": "Equestrian"
+  },
+  "mstwrdalenaya.com": {
+    "name": "Mustawrad Al Enaya",
+    "type": "Beauty"
+  }
 }

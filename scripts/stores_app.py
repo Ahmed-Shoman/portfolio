@@ -1,4 +1,5 @@
 """Store Shooter: screenshots the stores in stores.csv and builds the review page."""
+import csv
 import json
 import os
 import queue
@@ -25,6 +26,73 @@ LINE = re.compile(r"^\[\s*(\d+)/(\d+)\]\s+(\w+)\s+(\w+)\s+(\S+)")
 
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("green")
+
+
+URL_KEYS = ["url", "websitelink", "website link", "website", "link", "store", "store url", "domain", "site"]
+HINT_KEYS = ["platform_hint", "platform type", "platform"]
+MONTH_KEYS = ["month", "date"]
+WORK_KEYS = ["work", "task", "notes"]
+URL_RE = re.compile(r"^(https?://)?[a-z0-9-]+(\.[a-z0-9-]+)+(/\S*)?$", re.I)
+SKIP_RE = re.compile(r"figma\.com|google\.com|drive\.", re.I)
+
+
+def read_sheet(p: Path) -> list[dict]:
+    """Rows of a .csv or .xlsx (every tab) as dicts with lower-cased, trimmed headers."""
+    rows = []
+    if p.suffix.lower() in (".xlsx", ".xlsm"):
+        import openpyxl
+        wb = openpyxl.load_workbook(p, read_only=True, data_only=True)
+        for ws in wb.worksheets:
+            it = ws.iter_rows(values_only=True)
+            head = next(it, None)
+            if not head:
+                continue
+            keys = [str(h or "").strip().lower() for h in head]
+            for r in it:
+                rows.append({k: str(v).strip() if v is not None else "" for k, v in zip(keys, r)})
+    else:
+        with open(p, encoding="utf-8-sig", newline="") as f:
+            for r in csv.DictReader(f):
+                rows.append({(k or "").strip().lower(): (v or "").strip() for k, v in r.items()})
+    return rows
+
+
+def first(r: dict, keys) -> str:
+    for k in keys:
+        if r.get(k):
+            return r[k]
+    return ""
+
+
+def host_of(url: str) -> str:
+    u = url if re.match(r"^https?://", url, re.I) else "https://" + url
+    from urllib.parse import urlparse
+    h = (urlparse(u).hostname or "").lower()
+    return h[4:] if h.startswith("www.") else h
+
+
+def merge_sheets(paths: list[Path]) -> tuple[int, list[tuple[str, int]]]:
+    """Merge several sheets into scripts/stores.csv (url, platform_hint, month, work only — never other columns)."""
+    seen, out, per = set(), [], []
+    for p in paths:
+        n = 0
+        for r in read_sheet(p):
+            url = (first(r, URL_KEYS).split() or [""])[0].rstrip("),;]")
+            if not URL_RE.match(url) or SKIP_RE.search(url):
+                continue
+            h = host_of(url)
+            key = url.lower() if h in ("salla.sa", "zid.store", "zid.sa") else h
+            if not h or key in seen:
+                continue
+            seen.add(key)
+            n += 1
+            out.append({"url": url, "platform_hint": first(r, HINT_KEYS), "month": first(r, MONTH_KEYS), "work": first(r, WORK_KEYS)})
+        per.append((p.name, n))
+    with open(CSV, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["url", "platform_hint", "month", "work"])
+        w.writeheader()
+        w.writerows(out)
+    return len(out), per
 
 
 def count_rows(p: Path) -> int:
@@ -54,9 +122,9 @@ class App(ctk.CTk):
         # CSV
         row = ctk.CTkFrame(self, fg_color="transparent")
         row.pack(fill="x", padx=20)
-        self.csv = ctk.CTkEntry(row, height=40, font=(FONT, 13), placeholder_text="اختار ملف stores.csv")
+        self.csv = ctk.CTkEntry(row, height=40, font=(FONT, 13), placeholder_text="اختار شيت أو أكتر (CSV / Excel)")
         self.csv.pack(side="left", fill="x", expand=True)
-        ctk.CTkButton(row, text="اختار الملف", width=120, height=40, font=(FONT, 14), command=self.pick).pack(side="left", padx=(10, 0))
+        ctk.CTkButton(row, text="اختار الشيتات", width=130, height=40, font=(FONT, 14), command=self.pick).pack(side="left", padx=(10, 0))
         self.csv_info = ctk.CTkLabel(self, text="", font=(FONT, 12), text_color="#9aa4b2", anchor="e")
         self.csv_info.pack(fill="x", padx=20, pady=(4, 0))
 
@@ -72,6 +140,9 @@ class App(ctk.CTk):
         self.quality = ctk.CTkSegmentedButton(opts, values=["70", "78", "85"], font=(FONT, 13))
         self.quality.set("78")
         self.quality.grid(row=1, column=0, sticky="e", padx=12, pady=(0, 12))
+        self.skip = ctk.CTkCheckBox(opts, text="صوّر الجديد بس (سيب المتاجر اللي اتصوّرت قبل كده)", font=(FONT, 13))
+        self.skip.select()
+        self.skip.grid(row=2, column=0, columnspan=2, sticky="e", padx=12, pady=(0, 12))
 
         # Actions
         acts = ctk.CTkFrame(self, fg_color="transparent")
@@ -109,16 +180,30 @@ class App(ctk.CTk):
         if default.exists():
             self.set_csv(default)
         else:
-            self.csv_info.configure(text="مفيش stores.csv لسه — اختاره من «اختار الملف»")
+            self.csv_info.configure(text="مفيش شيت لسه — اختار شيت أو أكتر من «اختار الشيتات»")
         self.show_last()
         self.after(100, self.pump)
         self.protocol("WM_DELETE_WINDOW", self.on_close)
 
     # ── CSV ──
     def pick(self):
-        p = filedialog.askopenfilename(title="stores.csv", filetypes=[("CSV", "*.csv"), ("All", "*.*")])
-        if p:
-            self.set_csv(Path(p))
+        ps = filedialog.askopenfilenames(title="اختار شيت أو أكتر (Ctrl + كليك)",
+                                         filetypes=[("Sheets", "*.csv *.xlsx"), ("CSV", "*.csv"), ("Excel", "*.xlsx"), ("All", "*.*")])
+        if not ps:
+            return
+        paths = [Path(p) for p in ps]
+        try:
+            total, per = merge_sheets(paths)
+        except Exception as e:
+            messagebox.showerror("Store Shooter", "مقدرتش أقرا الشيت:\n" + str(e))
+            return
+        self.csv.delete(0, "end")
+        self.csv.insert(0, " + ".join(p.name for p in paths))
+        detail = " · ".join(f"{name}: {n}" for name, n in per)
+        self.csv_info.configure(
+            text=(f"{total} متجر من {len(paths)} شيت  ({detail})" if total else
+                  "⚠ ملقتش لينكات متاجر في الشيتات (محتاج عمود url أو websitelink)"),
+            text_color="#9aa4b2" if total else "#e88")
 
     def set_csv(self, p: Path):
         if p.resolve() != CSV.resolve():
@@ -142,7 +227,8 @@ class App(ctk.CTk):
         args = ["node", str(SCRIPTS / "shoot-stores.mjs")]
         if only:
             args += ["--only", ",".join(only)]
-        env = {**os.environ, "CONCURRENCY": self.conc.get(), "JPG_QUALITY": self.quality.get()}
+        env = {**os.environ, "CONCURRENCY": self.conc.get(), "JPG_QUALITY": self.quality.get(),
+               "SKIP_DONE": "1" if self.skip.get() and not only else "0"}
         try:
             self.proc = subprocess.Popen(args, cwd=ROOT, env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
                                          creationflags=NO_WINDOW)

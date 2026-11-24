@@ -1,12 +1,140 @@
 {
   "included": [
     {
+      "domain": "innovation-pioneer.com",
+      "url": "https://www.innovation-pioneer.com/",
+      "name": "Innovation Pioneers",
+      "type": "Tools",
+      "platform": "shopify",
+      "img": "/img/stores/innovation-pioneer.com.jpg"
+    },
+    {
+      "domain": "jessygem.com",
+      "url": "https://jessygem.com/",
+      "name": "Jessy Gem",
+      "type": "Jewelry",
+      "platform": "salla",
+      "img": "/img/stores/jessygem.com.jpg"
+    },
+    {
+      "domain": "dukanphone.com",
+      "url": "https://dukanphone.com/",
+      "name": "Dukan Phone",
+      "type": "Electronics",
+      "platform": "zid",
+      "img": "/img/stores/dukanphone.com.jpg"
+    },
+    {
+      "domain": "madinajewelleries.com",
+      "url": "https://madinajewelleries.com/",
+      "name": "Madina Jewelleries",
+      "type": "Jewelry",
+      "platform": "salla",
+      "img": "/img/stores/madinajewelleries.com.jpg"
+    },
+    {
+      "domain": "gol01.com",
+      "url": "https://gol01.com/",
+      "name": "Golden Touch",
+      "type": "Jewelry",
+      "platform": "salla",
+      "img": "/img/stores/gol01.com.jpg"
+    },
+    {
+      "domain": "albeatalfilastini.com",
+      "url": "https://albeatalfilastini.com/",
+      "name": "Al Beit Al Filastini",
+      "type": "Food",
+      "platform": "salla",
+      "img": "/img/stores/albeatalfilastini.com.jpg"
+    },
+    {
+      "domain": "oromiffa-roaster.com",
+      "url": "https://oromiffa-roaster.com/",
+      "name": "Oromiffa Roaster",
+      "type": "Coffee",
+      "platform": "salla",
+      "img": "/img/stores/oromiffa-roaster.com.jpg"
+    },
+    {
+      "domain": "om-tariq.com",
+      "url": "http://om-tariq.com/",
+      "name": "Om Tariq",
+      "type": "Spices",
+      "platform": "zid",
+      "img": "/img/stores/om-tariq.com.jpg"
+    },
+    {
+      "domain": "championsportssa.com",
+      "url": "https://championsportssa.com/",
+      "name": "Champion Sports",
+      "type": "Sports",
+      "platform": "salla",
+      "img": "/img/stores/championsportssa.com.jpg"
+    },
+    {
+      "domain": "rawnaj.com",
+      "url": "http://rawnaj.com/",
+      "name": "Rawnaj",
+      "type": "Beauty",
+      "platform": "salla",
+      "img": "/img/stores/rawnaj.com.jpg"
+    },
+    {
+      "domain": "um-khalid2.com",
+      "url": "https://um-khalid2.com/",
+      "name": "Um Khaled",
+      "type": "Beauty",
+      "platform": "salla",
+      "img": "/img/stores/um-khalid2.com.jpg"
+    },
+    {
+      "domain": "monaqat.com",
+      "url": "https://monaqat.com/",
+      "name": "Monaqat",
+      "type": "Fashion",
+      "platform": "salla",
+      "img": "/img/stores/monaqat.com.jpg"
+    },
+    {
+      "domain": "odred.sa",
+      "url": "https://odred.sa/",
+      "name": "Odred",
+      "type": "Perfume",
+      "platform": "salla",
+      "img": "/img/stores/odred.sa.jpg"
+    },
+    {
       "domain": "karamhomeksa.com",
       "url": "https://karamhomeksa.com/",
       "name": "Karam Home",
       "type": "Home",
       "platform": "salla",
       "img": "/img/stores/karamhomeksa.com.jpg"
+    },
+    {
+      "domain": "ronqhair.store",
+      "url": "https://ronqhair.store/",
+      "name": "Ronq Hair",
+      "type": "Hair Care",
+      "platform": "salla",
+      "img": "/img/stores/ronqhair.store.jpg"
+    },
+    {
+      "domain": "reeltv-2.com",
+      "url": "https://reeltv-2.com/",
+      "name": "Reel",
+      "type": "Subscriptions",
+      "platform": "salla",
+      "img": "/img/stores/reeltv-2.com.jpg"
+    },
+    {
+      "domain": "theswordcoffee.com",
+      "url": "https://theswordcoffee.com/",
+      "name": "The Sword Coffee",
+      "type": "Coffee",
+      "platform": "salla",
+      "img": "/img/stores/theswordcoffee.com.jpg"
     },
     {
       "domain": "mstkt-zhb.com",
@@ -31,14 +159,6 @@
       "type": "Honey & Dates",
       "platform": "salla",
       "img": "/img/stores/alghailani-honey.com.jpg"
-    },
-    {
-      "domain": "oromiffa-roaster.com",
-      "url": "https://oromiffa-roaster.com/ar",
-      "name": "Oromiffa Roaster",
-      "type": "Coffee",
-      "platform": "salla",
-      "img": "/img/stores/oromiffa-roaster.com.jpg"
     },
     {
       "domain": "daniacreative.com",
@@ -90,7 +210,7 @@
     },
     {
       "domain": "zainora-sa.com",
-      "url": "https://zainora-sa.com",
+      "url": "https://zainora-sa.com/",
       "name": "Zainora",
       "type": "Abayas",
       "platform": "salla",
@@ -127,9 +247,607 @@
       "type": "Abayas",
       "platform": "salla",
       "img": "/img/stores/etabaya.com.jpg"
+    },
+    {
+      "domain": "cobrafits.com",
+      "url": "https://cobrafits.com/",
+      "name": "Cobra Fits",
+      "type": "Sports",
+      "platform": "salla",
+      "img": "/img/stores/cobrafits.com.jpg"
+    },
+    {
+      "domain": "gag.sa",
+      "url": "https://gag.sa/",
+      "name": "Glow and Give",
+      "type": "Gifts",
+      "platform": "salla",
+      "img": "/img/stores/gag.sa.jpg"
+    },
+    {
+      "domain": "taiebat-alkhair.com",
+      "url": "https://taiebat-alkhair.com/",
+      "name": "Taiebat Al Khair",
+      "type": "Meat",
+      "platform": "salla",
+      "img": "/img/stores/taiebat-alkhair.com.jpg"
+    },
+    {
+      "domain": "epure-sa.com",
+      "url": "https://epure-sa.com/",
+      "name": "Épure",
+      "type": "Perfume",
+      "platform": "salla",
+      "img": "/img/stores/epure-sa.com.jpg"
+    },
+    {
+      "domain": "shop.unitedgulf-sa.com",
+      "url": "https://shop.unitedgulf-sa.com/",
+      "name": "United Gulf",
+      "type": "HVAC Parts",
+      "platform": "salla",
+      "img": "/img/stores/shop.unitedgulf-sa.com.jpg"
+    },
+    {
+      "domain": "alint-sa.com",
+      "url": "https://alint-sa.com/",
+      "name": "Alint",
+      "type": "Beauty",
+      "platform": "salla",
+      "img": "/img/stores/alint-sa.com.jpg"
+    },
+    {
+      "domain": "areentv.com",
+      "url": "https://areentv.com/",
+      "name": "AreenTV",
+      "type": "Subscriptions",
+      "platform": "salla",
+      "img": "/img/stores/areentv.com.jpg"
+    },
+    {
+      "domain": "nwadir.sa",
+      "url": "https://nwadir.sa/",
+      "name": "Nwadir Telecom",
+      "type": "Electronics",
+      "platform": "salla",
+      "img": "/img/stores/nwadir.sa.jpg"
+    },
+    {
+      "domain": "lamsamkhmalia.com",
+      "url": "https://lamsamkhmalia.com/",
+      "name": "Lamsa Mkhmalia",
+      "type": "Beauty",
+      "platform": "salla",
+      "img": "/img/stores/lamsamkhmalia.com.jpg"
+    },
+    {
+      "domain": "espere-sa.com",
+      "url": "https://espere-sa.com/",
+      "name": "Espère",
+      "type": "Perfume",
+      "platform": "zid",
+      "img": "/img/stores/espere-sa.com.jpg"
+    },
+    {
+      "domain": "oud-boxes.com",
+      "url": "https://oud-boxes.com/",
+      "name": "Oud Boxes",
+      "type": "Perfume",
+      "platform": "salla",
+      "img": "/img/stores/oud-boxes.com.jpg"
+    },
+    {
+      "domain": "eta.sa",
+      "url": "https://eta.sa/",
+      "name": "Eta",
+      "type": "Coffee",
+      "platform": "salla",
+      "img": "/img/stores/eta.sa.jpg"
+    },
+    {
+      "domain": "specialcarsa.com",
+      "url": "https://specialcarsa.com/",
+      "name": "Special Car",
+      "type": "Car Care",
+      "platform": "salla",
+      "img": "/img/stores/specialcarsa.com.jpg"
+    },
+    {
+      "domain": "ruganda2022.com",
+      "url": "https://ruganda2022.com/",
+      "name": "Rojenda",
+      "type": "Beauty",
+      "platform": "salla",
+      "img": "/img/stores/ruganda2022.com.jpg"
+    },
+    {
+      "domain": "khzama-store.com",
+      "url": "https://khzama-store.com/",
+      "name": "Khzama",
+      "type": "Beauty",
+      "platform": "salla",
+      "img": "/img/stores/khzama-store.com.jpg"
+    },
+    {
+      "domain": "my-kiwi.com",
+      "url": "https://my-kiwi.com/",
+      "name": "Kiwi",
+      "type": "Kids",
+      "platform": "salla",
+      "img": "/img/stores/my-kiwi.com.jpg"
+    },
+    {
+      "domain": "untamed-ksa.com",
+      "url": "https://untamed-ksa.com/",
+      "name": "Untamed",
+      "type": "Beard Care",
+      "platform": "salla",
+      "img": "/img/stores/untamed-ksa.com.jpg"
+    },
+    {
+      "domain": "premiumajwas.com",
+      "url": "https://premiumajwas.com/",
+      "name": "Premium Ajwa",
+      "type": "Honey & Dates",
+      "platform": "salla",
+      "img": "/img/stores/premiumajwas.com.jpg"
+    },
+    {
+      "domain": "feviumsa.com",
+      "url": "https://feviumsa.com/",
+      "name": "Fevium",
+      "type": "Perfume",
+      "platform": "zid",
+      "img": "/img/stores/feviumsa.com.jpg"
+    },
+    {
+      "domain": "miskad.com",
+      "url": "https://miskad.com/",
+      "name": "Miskad",
+      "type": "Perfume",
+      "platform": "zid",
+      "img": "/img/stores/miskad.com.jpg"
+    },
+    {
+      "domain": "hullahjewelry.com",
+      "url": "https://hullahjewelry.com/",
+      "name": "Hullah Jewelry",
+      "type": "Jewelry",
+      "platform": "salla",
+      "img": "/img/stores/hullahjewelry.com.jpg"
+    },
+    {
+      "domain": "yush-store.com",
+      "url": "https://yush-store.com/",
+      "name": "Yush",
+      "type": "Beauty",
+      "platform": "salla",
+      "img": "/img/stores/yush-store.com.jpg"
+    },
+    {
+      "domain": "r2stor.com",
+      "url": "https://r2stor.com/",
+      "name": "R2 Store",
+      "type": "Subscriptions",
+      "platform": "salla",
+      "img": "/img/stores/r2stor.com.jpg"
+    },
+    {
+      "domain": "moonboutique-ksa.com",
+      "url": "https://moonboutique-ksa.com/",
+      "name": "Moon Boutique",
+      "type": "Fashion",
+      "platform": "salla",
+      "img": "/img/stores/moonboutique-ksa.com.jpg"
+    },
+    {
+      "domain": "romen-store.com",
+      "url": "https://romen-store.com/",
+      "name": "Romen",
+      "type": "Hot Sauces",
+      "platform": "salla",
+      "img": "/img/stores/romen-store.com.jpg"
+    },
+    {
+      "domain": "elsakhra.com",
+      "url": "https://elsakhra.com/",
+      "name": "Awdat Al Sakhra",
+      "type": "Food",
+      "platform": "salla",
+      "img": "/img/stores/elsakhra.com.jpg"
+    },
+    {
+      "domain": "wowgloww.com",
+      "url": "https://wowgloww.com/",
+      "name": "Wow Glow",
+      "type": "Health",
+      "platform": "salla",
+      "img": "/img/stores/wowgloww.com.jpg"
+    },
+    {
+      "domain": "coffeedeals.sa",
+      "url": "https://coffeedeals.sa/",
+      "name": "Coffee Deals",
+      "type": "Coffee",
+      "platform": "zid",
+      "img": "/img/stores/coffeedeals.sa.jpg"
+    },
+    {
+      "domain": "taifcard.com",
+      "url": "https://taifcard.com/",
+      "name": "Taif Card",
+      "type": "Digital Cards",
+      "platform": "salla",
+      "img": "/img/stores/taifcard.com.jpg"
+    },
+    {
+      "domain": "monaliz-sa.com",
+      "url": "https://monaliz-sa.com/",
+      "name": "Monaliz",
+      "type": "Abayas",
+      "platform": "zid",
+      "img": "/img/stores/monaliz-sa.com.jpg"
+    },
+    {
+      "domain": "auraattiresksa.com",
+      "url": "https://auraattiresksa.com/",
+      "name": "Aura Attire",
+      "type": "Abayas",
+      "platform": "zid",
+      "img": "/img/stores/auraattiresksa.com.jpg"
+    },
+    {
+      "domain": "emerald20.com",
+      "url": "https://emerald20.com/",
+      "name": "Emerald",
+      "type": "Abayas",
+      "platform": "salla",
+      "img": "/img/stores/emerald20.com.jpg"
+    },
+    {
+      "domain": "xphone-sa.com",
+      "url": "https://xphone-sa.com/",
+      "name": "Xphone",
+      "type": "Electronics",
+      "platform": "salla",
+      "img": "/img/stores/xphone-sa.com.jpg"
+    },
+    {
+      "domain": "hikayat-lawha.com",
+      "url": "https://hikayat-lawha.com/",
+      "name": "Hikayat Lawha",
+      "type": "Wall Art",
+      "platform": "salla",
+      "img": "/img/stores/hikayat-lawha.com.jpg"
+    },
+    {
+      "domain": "lilia-beauty-products.com",
+      "url": "https://lilia-beauty-products.com/",
+      "name": "Lilia",
+      "type": "Body Care",
+      "platform": "salla",
+      "img": "/img/stores/lilia-beauty-products.com.jpg"
+    },
+    {
+      "domain": "oecean.com",
+      "url": "https://oecean.com/",
+      "name": "Ocean",
+      "type": "Swimwear",
+      "platform": "salla",
+      "img": "/img/stores/oecean.com.jpg"
+    },
+    {
+      "domain": "on1mark.com",
+      "url": "https://on1mark.com/",
+      "name": "One Mark",
+      "type": "Digital Services",
+      "platform": "salla",
+      "img": "/img/stores/on1mark.com.jpg"
+    },
+    {
+      "domain": "sorbo-bottles.com",
+      "url": "https://sorbo-bottles.com/",
+      "name": "Sorbo Bottles",
+      "type": "Drinkware",
+      "platform": "salla",
+      "img": "/img/stores/sorbo-bottles.com.jpg"
+    },
+    {
+      "domain": "queen-sstore.com",
+      "url": "https://queen-sstore.com/",
+      "name": "Queen Store",
+      "type": "Natural Care",
+      "platform": "salla",
+      "img": "/img/stores/queen-sstore.com.jpg"
+    },
+    {
+      "domain": "elegant-veil.com",
+      "url": "https://elegant-veil.com/",
+      "name": "Elegant Veil",
+      "type": "Abayas",
+      "platform": "salla",
+      "img": "/img/stores/elegant-veil.com.jpg"
+    },
+    {
+      "domain": "mrades.com",
+      "url": "https://mrades.com/",
+      "name": "Mrades",
+      "type": "Perfume",
+      "platform": "salla",
+      "img": "/img/stores/mrades.com.jpg"
+    },
+    {
+      "domain": "knight-ks.com",
+      "url": "https://knight-ks.com/",
+      "name": "Knight",
+      "type": "Eyewear",
+      "platform": "salla",
+      "img": "/img/stores/knight-ks.com.jpg"
+    },
+    {
+      "domain": "fuelupstore.com",
+      "url": "https://fuelupstore.com/",
+      "name": "Fuel Up",
+      "type": "Supplements",
+      "platform": "salla",
+      "img": "/img/stores/fuelupstore.com.jpg"
+    },
+    {
+      "domain": "store.nasmah-tea.com",
+      "url": "https://store.nasmah-tea.com/",
+      "name": "Nasmati",
+      "type": "Tea",
+      "platform": "zid",
+      "img": "/img/stores/store.nasmah-tea.com.jpg"
+    },
+    {
+      "domain": "gloowart.com",
+      "url": "https://gloowart.com/",
+      "name": "Gloow Art",
+      "type": "Wall Art",
+      "platform": "salla",
+      "img": "/img/stores/gloowart.com.jpg"
+    },
+    {
+      "domain": "alkreaishan.com",
+      "url": "https://alkreaishan.com/",
+      "name": "Al Kreaishan",
+      "type": "Natural Care",
+      "platform": "salla",
+      "img": "/img/stores/alkreaishan.com.jpg"
+    },
+    {
+      "domain": "khatif-aladwa-store.com",
+      "url": "https://khatif-aladwa-store.com/",
+      "name": "Khatif Al Adwa",
+      "type": "Car Tech",
+      "platform": "salla",
+      "img": "/img/stores/khatif-aladwa-store.com.jpg"
+    },
+    {
+      "domain": "beautilia.net",
+      "url": "https://beautilia.net/",
+      "name": "Beautilia",
+      "type": "Beauty",
+      "platform": "zid",
+      "img": "/img/stores/beautilia.net.jpg"
+    },
+    {
+      "domain": "julie-sa.com",
+      "url": "https://julie-sa.com/",
+      "name": "Julia",
+      "type": "Beauty",
+      "platform": "salla",
+      "img": "/img/stores/julie-sa.com.jpg"
+    },
+    {
+      "domain": "ainhaa943.com",
+      "url": "https://ainhaa943.com/",
+      "name": "Ainhaa",
+      "type": "Fashion",
+      "platform": "zid",
+      "img": "/img/stores/ainhaa943.com.jpg"
+    },
+    {
+      "domain": "mrkzalafk.com",
+      "url": "https://mrkzalafk.com/",
+      "name": "Al Ufuq",
+      "type": "Education",
+      "platform": "salla",
+      "img": "/img/stores/mrkzalafk.com.jpg"
+    },
+    {
+      "domain": "alodaifihoney.com",
+      "url": "https://alodaifihoney.com/",
+      "name": "Al Odaifi Honey",
+      "type": "Honey & Dates",
+      "platform": "salla",
+      "img": "/img/stores/alodaifihoney.com.jpg"
+    },
+    {
+      "domain": "hlay.sa",
+      "url": "https://hlay.sa/",
+      "name": "Hlay",
+      "type": "Coffee",
+      "platform": "zid",
+      "img": "/img/stores/hlay.sa.jpg"
+    },
+    {
+      "domain": "treasureisland.sa",
+      "url": "https://treasureisland.sa/",
+      "name": "Treasure Island",
+      "type": "Fashion",
+      "platform": "salla",
+      "img": "/img/stores/treasureisland.sa.jpg"
+    },
+    {
+      "domain": "flawrnyesh.com",
+      "url": "https://flawrnyesh.com/",
+      "name": "Flawr Nyesh",
+      "type": "Perfume",
+      "platform": "salla",
+      "img": "/img/stores/flawrnyesh.com.jpg"
+    },
+    {
+      "domain": "partline2.com",
+      "url": "https://partline2.com/",
+      "name": "Part Line",
+      "type": "Auto Parts",
+      "platform": "salla",
+      "img": "/img/stores/partline2.com.jpg"
+    },
+    {
+      "domain": "thraastore.com",
+      "url": "https://thraastore.com/",
+      "name": "Thraa",
+      "type": "Fashion",
+      "platform": "shopify",
+      "img": "/img/stores/thraastore.com.jpg"
+    },
+    {
+      "domain": "max10phone.com",
+      "url": "https://max10phone.com/",
+      "name": "Max 10 Phone",
+      "type": "Electronics",
+      "platform": "salla",
+      "img": "/img/stores/max10phone.com.jpg"
+    },
+    {
+      "domain": "pureskinstore.zid.store",
+      "url": "https://pureskinstore.zid.store/",
+      "name": "Pure Skin",
+      "type": "Beauty",
+      "platform": "zid",
+      "img": "/img/stores/pureskinstore.zid.store.jpg"
+    },
+    {
+      "domain": "henasedr.com",
+      "url": "https://henasedr.com/",
+      "name": "Nature Stores",
+      "type": "Hair Care",
+      "platform": "salla",
+      "img": "/img/stores/henasedr.com.jpg"
+    },
+    {
+      "domain": "darlallasultana.com",
+      "url": "https://darlallasultana.com/",
+      "name": "Dar Lalla Sultana",
+      "type": "Fashion",
+      "platform": "salla",
+      "img": "/img/stores/darlallasultana.com.jpg"
+    },
+    {
+      "domain": "lolo-e.com",
+      "url": "https://lolo-e.com/",
+      "name": "Lolo Jewelry",
+      "type": "Jewelry",
+      "platform": "salla",
+      "img": "/img/stores/lolo-e.com.jpg"
+    },
+    {
+      "domain": "alganas.com",
+      "url": "https://alganas.com/",
+      "name": "Al Qannas",
+      "type": "Air Rifles",
+      "platform": "zid",
+      "img": "/img/stores/alganas.com.jpg"
+    },
+    {
+      "domain": "teckzone.online",
+      "url": "https://teckzone.online/",
+      "name": "Tech Zone",
+      "type": "Electronics",
+      "platform": "zid",
+      "img": "/img/stores/teckzone.online.jpg"
+    },
+    {
+      "domain": "srayaaltrath.com",
+      "url": "https://srayaaltrath.com/",
+      "name": "Saraya Al Turath",
+      "type": "Heritage",
+      "platform": "salla",
+      "img": "/img/stores/srayaaltrath.com.jpg"
+    },
+    {
+      "domain": "fatoo-boxes.com",
+      "url": "https://fatoo-boxes.com/",
+      "name": "Fatoo Boxes",
+      "type": "Spices",
+      "platform": "salla",
+      "img": "/img/stores/fatoo-boxes.com.jpg"
+    },
+    {
+      "domain": "murujalaseel.com",
+      "url": "https://murujalaseel.com/",
+      "name": "Muruj Al Aseel",
+      "type": "Equestrian",
+      "platform": "salla",
+      "img": "/img/stores/murujalaseel.com.jpg"
+    },
+    {
+      "domain": "mstwrdalenaya.com",
+      "url": "https://mstwrdalenaya.com/",
+      "name": "Mustawrad Al Enaya",
+      "type": "Beauty",
+      "platform": "salla",
+      "img": "/img/stores/mstwrdalenaya.com.jpg"
     }
   ],
   "excluded": [
+    {
+      "domain": "floraa-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://floraa-sa.com/)"
+    },
+    {
+      "domain": "medham-sa.com",
+      "platform": "wordpress",
+      "status": "ok",
+      "why": "platform: wordpress"
+    },
+    {
+      "domain": "smaco-sa.com",
+      "platform": "wordpress",
+      "status": "closed",
+      "why": "closed (matched المتجر تحت الصيانة|تحت الصيانة|وضع الصيا)"
+    },
+    {
+      "domain": "reemahair-sa.com",
+      "platform": "wordpress",
+      "status": "ok",
+      "why": "platform: wordpress"
+    },
+    {
+      "domain": "dreeam-beauty.com",
+      "platform": "salla",
+      "status": "ok",
+      "why": "blank / one colour (98%)"
+    },
+    {
+      "domain": "towerselevator.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://towerselevator.com/)"
+    },
+    {
+      "domain": "healthandbeauty-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://healthandbeauty-sa.com/)"
+    },
+    {
+      "domain": "ziyad-studio.com",
+      "platform": "wordpress",
+      "status": "ok",
+      "why": "platform: wordpress"
+    },
+    {
+      "domain": "thamra1621.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://thamra1621.com/)"
+    },
     {
       "domain": "florascape.co",
       "platform": "wordpress",
@@ -165,6 +883,696 @@
       "platform": "wordpress",
       "status": "ok",
       "why": "platform: wordpress"
+    },
+    {
+      "domain": "anoush-ksa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://anoush-ksa.com/)"
+    },
+    {
+      "domain": "shoppingline1.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://shoppingline1.com/)"
+    },
+    {
+      "domain": "nosyboutique.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://nosyboutique.com/)"
+    },
+    {
+      "domain": "ahmad-aziz.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://ahmad-aziz.com/)"
+    },
+    {
+      "domain": "onetwocard.com",
+      "platform": "other",
+      "status": "ok",
+      "why": "platform: other"
+    },
+    {
+      "domain": "calmastore-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://calmastore-sa.com/)"
+    },
+    {
+      "domain": "al-jawhara-store.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://al-jawhara-store.com/)"
+    },
+    {
+      "domain": "elegantveil-as.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://elegantveil-as.com/)"
+    },
+    {
+      "domain": "atrakt-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://atrakt-sa.com/)"
+    },
+    {
+      "domain": "femmestyle-as.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://femmestyle-as.com/)"
+    },
+    {
+      "domain": "jana-arabria.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://jana-arabria.com/)"
+    },
+    {
+      "domain": "electsaudi.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://electsaudi.com/)"
+    },
+    {
+      "domain": "dantilabaya.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://dantilabaya.com/)"
+    },
+    {
+      "domain": "salla.sa",
+      "platform": "salla",
+      "status": "closed",
+      "why": "closed (matched المتجر\\s*(مغلق|مقفل|متوقف))"
+    },
+    {
+      "domain": "supersmart1.store",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://supersmart1.store/)"
+    },
+    {
+      "domain": "atoastore.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://atoastore.com/)"
+    },
+    {
+      "domain": "anagaghasq.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://anagaghasq.com/)"
+    },
+    {
+      "domain": "blackorchid-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://blackorchid-sa.com/)"
+    },
+    {
+      "domain": "divinediva-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://divinediva-sa.com/)"
+    },
+    {
+      "domain": "miniiva.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://miniiva.com/)"
+    },
+    {
+      "domain": "diala.shop",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://diala.shop/)"
+    },
+    {
+      "domain": "almohtarif-as.com",
+      "platform": "other",
+      "status": "ok",
+      "why": "platform: other"
+    },
+    {
+      "domain": "daarbasma.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://daarbasma.com/)"
+    },
+    {
+      "domain": "hagaaty.shop",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://hagaaty.shop/)"
+    },
+    {
+      "domain": "divaessence-as.com",
+      "platform": "other",
+      "status": "ok",
+      "why": "platform: other"
+    },
+    {
+      "domain": "ameeraaldibaj.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://ameeraaldibaj.com/)"
+    },
+    {
+      "domain": "folvy-as.com",
+      "platform": "other",
+      "status": "ok",
+      "why": "platform: other"
+    },
+    {
+      "domain": "arjoon-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://arjoon-sa.com/)"
+    },
+    {
+      "domain": "ladyblisssa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://ladyblisssa.com/)"
+    },
+    {
+      "domain": "blendhouse-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://blendhouse-sa.com/)"
+    },
+    {
+      "domain": "resultfindernow.com",
+      "platform": "other",
+      "status": "closed",
+      "why": "closed (empty page)"
+    },
+    {
+      "domain": "rekaz.io",
+      "platform": "rekaz",
+      "status": "ok",
+      "why": "platform: rekaz"
+    },
+    {
+      "domain": "wahag-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://wahag-sa.com/)"
+    },
+    {
+      "domain": "smarthome-storre.com",
+      "platform": "salla",
+      "status": "ok",
+      "why": "blank / one colour (99%)"
+    },
+    {
+      "domain": "thowq.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://thowq.com/)"
+    },
+    {
+      "domain": "waves-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://waves-sa.com/)"
+    },
+    {
+      "domain": "gaming-zone1.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://gaming-zone1.com/)"
+    },
+    {
+      "domain": "styleo-store.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://styleo-store.com/)"
+    },
+    {
+      "domain": "arabian-silk.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://arabian-silk.com/)"
+    },
+    {
+      "domain": "aldanah-store.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://aldanah-store.com/)"
+    },
+    {
+      "domain": "noura-ksa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://noura-ksa.com/)"
+    },
+    {
+      "domain": "drgame-store.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://drgame-store.com/)"
+    },
+    {
+      "domain": "drrivecam.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://drrivecam.com/)"
+    },
+    {
+      "domain": "alwasla-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://alwasla-sa.com/)"
+    },
+    {
+      "domain": "zainbeauty-sa.com",
+      "platform": "wordpress",
+      "status": "down",
+      "why": "down (HTTP 500)"
+    },
+    {
+      "domain": "bestvalue-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://bestvalue-sa.com/)"
+    },
+    {
+      "domain": "cover-white.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://cover-white.com/)"
+    },
+    {
+      "domain": "elysiva-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://elysiva-sa.com/)"
+    },
+    {
+      "domain": "rawnaq-su.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://rawnaq-su.com/)"
+    },
+    {
+      "domain": "anaqatal-tanseek.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://anaqatal-tanseek.com/)"
+    },
+    {
+      "domain": "darelujin.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://darelujin.com/)"
+    },
+    {
+      "domain": "cryptocurrency-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://cryptocurrency-sa.com/)"
+    },
+    {
+      "domain": "faithdigitalstore.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://faithdigitalstore.com/)"
+    },
+    {
+      "domain": "ghaliaa-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://ghaliaa-sa.com/)"
+    },
+    {
+      "domain": "bedonmawid.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://bedonmawid.com/)"
+    },
+    {
+      "domain": "rozyspa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://rozyspa.com/)"
+    },
+    {
+      "domain": "royalcouture-sa.com",
+      "platform": "wordpress",
+      "status": "ok",
+      "why": "platform: wordpress"
+    },
+    {
+      "domain": "purepower-as.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://purepower-as.com/)"
+    },
+    {
+      "domain": "rivolo1.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://rivolo1.com/)"
+    },
+    {
+      "domain": "veila-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://veila-sa.com/)"
+    },
+    {
+      "domain": "lamsa-saudia.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://lamsa-saudia.com/)"
+    },
+    {
+      "domain": "neemshop-ns.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://neemshop-ns.com/)"
+    },
+    {
+      "domain": "nexi-sa.shop",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://nexi-sa.shop/)"
+    },
+    {
+      "domain": "vipjerukbet.com",
+      "platform": "other",
+      "status": "ok",
+      "why": "platform: other"
+    },
+    {
+      "domain": "beautystyle-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://beautystyle-sa.com/)"
+    },
+    {
+      "domain": "ahlaabayat.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://ahlaabayat.com/)"
+    },
+    {
+      "domain": "reqa-w-anaqa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://reqa-w-anaqa.com/)"
+    },
+    {
+      "domain": "abayatna.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://abayatna.com/)"
+    },
+    {
+      "domain": "nasem-elgamal.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://nasem-elgamal.com/)"
+    },
+    {
+      "domain": "rovan-store.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://rovan-store.com/)"
+    },
+    {
+      "domain": "royalglow-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://royalglow-sa.com/)"
+    },
+    {
+      "domain": "geopardoshop.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://geopardoshop.com/)"
+    },
+    {
+      "domain": "sahabalalam-ksa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://sahabalalam-ksa.com/)"
+    },
+    {
+      "domain": "glowaura-ksa.com",
+      "platform": "wordpress",
+      "status": "ok",
+      "why": "platform: wordpress"
+    },
+    {
+      "domain": "danroastery.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://danroastery.com/)"
+    },
+    {
+      "domain": "aero-cp.com",
+      "platform": "wordpress",
+      "status": "closed",
+      "why": "closed (matched المتجر تحت الصيانة|تحت الصيانة|وضع الصيا)"
+    },
+    {
+      "domain": "lavinaempire.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://lavinaempire.com/)"
+    },
+    {
+      "domain": "viorastore-ksa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://viorastore-ksa.com/)"
+    },
+    {
+      "domain": "ez-plus.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://ez-plus.com/)"
+    },
+    {
+      "domain": "glamksa-store.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://glamksa-store.com/)"
+    },
+    {
+      "domain": "piorat.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://piorat.com/)"
+    },
+    {
+      "domain": "abayatlamar.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://abayatlamar.com/)"
+    },
+    {
+      "domain": "jeekstore.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://jeekstore.com/)"
+    },
+    {
+      "domain": "rosecare-ksa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://rosecare-ksa.com/)"
+    },
+    {
+      "domain": "baytanaqa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://baytanaqa.com/)"
+    },
+    {
+      "domain": "moonlight-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://moonlight-sa.com/)"
+    },
+    {
+      "domain": "bean-and-bliss.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://bean-and-bliss.com/)"
+    },
+    {
+      "domain": "yazon-ksa.com",
+      "platform": "salla",
+      "status": "ok",
+      "why": "blank / one colour (98%)"
+    },
+    {
+      "domain": "ronaq-ksa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://ronaq-ksa.com/)"
+    },
+    {
+      "domain": "platform.rekaz.io",
+      "platform": "rekaz",
+      "status": "ok",
+      "why": "blank / one colour (90%)"
+    },
+    {
+      "domain": "yuki-store.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH at https://yuki-store.com/)"
+    },
+    {
+      "domain": "green-aura.store",
+      "platform": "salla",
+      "status": "ok",
+      "why": "removed by hand"
+    },
+    {
+      "domain": "vastsportsa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://vastsportsa.com/)"
+    },
+    {
+      "domain": "darainpay.store",
+      "platform": "salla",
+      "status": "ok",
+      "why": "removed by hand"
+    },
+    {
+      "domain": "glowry-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (HTTP 404)"
+    },
+    {
+      "domain": "lelianbakery.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://lelianbakery.com/)"
+    },
+    {
+      "domain": "sorastore-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://sorastore-sa.com/)"
+    },
+    {
+      "domain": "digitaal-plus.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://digitaal-plus.com/)"
+    },
+    {
+      "domain": "rawnagshope.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://rawnagshope.com/)"
+    },
+    {
+      "domain": "offgridoficial.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://offgridoficial.com/)"
+    },
+    {
+      "domain": "auracare-ksa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://auracare-ksa.com/)"
+    },
+    {
+      "domain": "lmuraaaoo9.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://lmuraaaoo9.com/)"
+    },
+    {
+      "domain": "alurastore-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://alurastore-sa.com/)"
+    },
+    {
+      "domain": "noraq-sa.com",
+      "platform": "other",
+      "status": "ok",
+      "why": "platform: other"
+    },
+    {
+      "domain": "miskeljoary.com",
+      "platform": "other",
+      "status": "ok",
+      "why": "platform: other"
+    },
+    {
+      "domain": "lamset-anaka.de",
+      "platform": "wordpress",
+      "status": "ok",
+      "why": "platform: wordpress"
+    },
+    {
+      "domain": "alfareselectro.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://alfareselectro.com/)"
+    },
+    {
+      "domain": "lumiraashop.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://lumiraashop.com/)"
+    },
+    {
+      "domain": "skiinova.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://skiinova.com/)"
+    },
+    {
+      "domain": "beautywor1d.online",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://beautywor1d.online/)"
+    },
+    {
+      "domain": "rataq-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at http://rataq-sa.com/)"
+    },
+    {
+      "domain": "evaicare.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://evaicare.com/)"
+    },
+    {
+      "domain": "fajralenayeh.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://fajralenayeh.com/)"
+    },
+    {
+      "domain": "skinera-sa.com",
+      "platform": "other",
+      "status": "down",
+      "why": "down (page.goto: net::ERR_NAME_NOT_RESOLVED at https://skinera-sa.com/)"
+    },
+    {
+      "domain": "h-designn.com",
+      "platform": "salla",
+      "status": "ok",
+      "why": "removed by hand"
     }
   ]
 }
